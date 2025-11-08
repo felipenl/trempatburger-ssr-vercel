@@ -51,7 +51,7 @@ function ContactForm() {
     setStatus(FormStatus.loading);
 
     window
-      .fetch('/workers/send-email', {
+      .fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
