@@ -1,13 +1,42 @@
-import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { useTranslation } from 'react-i18next';
+import Trempat from '@assets/logos/trempat_doble.svg?react';
+import Steps from '@components/home/steps';
+import OpenMenu from '@components/home/open-menu';
+import LazyImg from '@components/lazy/lazy-image';
 
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
+function Home() {
+  const { t } = useTranslation();
+  return (
+    <div className="flex flex-col items-center justify-center gap-2 p-4">
+      <div className="flex flex-col items-center justify-center gap-4">
+        <Trempat
+          role="img"
+          aria-label={t('brand.name')}
+          className="text-trempat-red animate-in slide-in-from-top z-10 m-8 mx-auto w-4/5 max-w-2xl md:w-1/2 lg:w-3/5"
+        />
+        <LazyImg
+          src="images/tri-burger.png"
+          alt="Burgers"
+          className="slide-in-from-bottom animate-in -mt-8 w-8/10 max-w-4xl drop-shadow-lg ease-in-out lg:-mt-18"
+        />
+
+        <div className="mx-auto my-8 w-7/10 text-center md:max-w-3/4 lg:my-20 xl:max-w-3/5">
+          <div>
+            {(t('brand.description') || '').split('\n').map((line, index) => (
+              <p
+                className="text-foreground/70 text-xl leading-tight! whitespace-pre-wrap italic lg:text-4xl!"
+                key={index}
+              >
+                {line}
+              </p>
+            ))}
+          </div>
+        </div>
+        <Steps />
+        <OpenMenu />
+      </div>
+    </div>
+  );
 }
 
-export default function Home() {
-  return <Welcome />;
-}
+export default Home;

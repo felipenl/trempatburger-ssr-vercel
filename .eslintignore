@@ -1,0 +1,14 @@
+# Build outputs
+dist/
+build/
+.react-router/
+.wrangler/
+
+# Dependencies
+node_modules/
+
+# Generated files
+**/*.d.ts
+
+# Logs
+*.log

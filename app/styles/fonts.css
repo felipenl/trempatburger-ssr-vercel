@@ -1,0 +1,64 @@
+/* Riffic font family */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+/* Light (300) */
+@font-face {
+  font-family: 'Riffic';
+  src: url('/fonts/riffic/riffic-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Book (400 / Regular) */
+@font-face {
+  font-family: 'Riffic';
+  src: url('/fonts/riffic/riffic-book.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: 'Riffic';
+  src: url('/fonts/riffic/riffic-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SemiBold (600) */
+@font-face {
+  font-family: 'Riffic';
+  src: url('/fonts/riffic/riffic-semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: 'Riffic';
+  src: url('/fonts/riffic/riffic-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* UltraBold (800) */
+@font-face {
+  font-family: 'Riffic';
+  src: url('/fonts/riffic/riffic-ultrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Black (900) */
+@font-face {
+  font-family: 'Riffic';
+  src: url('/fonts/riffic/riffic-black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

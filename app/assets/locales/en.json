@@ -1,0 +1,309 @@
+{
+  "common": {
+    "loading": "Loading",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "submit": "Submit",
+    "submitting": "Submitting",
+    "reset": "Clear"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggle": "Toggle theme",
+    "menu": "Menu"
+  },
+  "lang": {
+    "code": "en",
+    "name": "English",
+    "toggle": "Change language"
+  },
+  "brand": {
+    "name": "Trempat Burger",
+    "slogan": "This ain’t just eating, it’s sinning.\nWelcome to Trempat!",
+    "description": "Trempat Burger ain’t your average burger joint.\nHere, everything’s turned up loud: juicy buns, perfectly cooked dry-aged beef, and recipes that flip the usual upside down.\nWe’re all about bold mashups, toppings that hit different, and that cheeky rebel twist that makes every burger one of a kind. Doesn’t matter if you dig in at the spot, grab it to go, or get it dropped at your door—every Trempat is built to make you say “damn, that’s insane” from the very first bite.\nIn short: burgers with soul, no filters, and a whole lotta rock’n’roll."
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About us",
+    "order": "Online order",
+    "back-to-top": "Back to top"
+  },
+  "not-found": {
+    "title": "Page not found"
+  },
+  "home": {
+    "title": "Trempat Burger"
+  },
+  "about": {
+    "title": "About Trempat Burger",
+    "who-we-are": "Who are we?",
+    "we-are": "We’re Judit and Miki the guilty pair behind the fact that in Cardedeu, nobody can ever look at a burger the same way again.\nMiki’s all about perfection, obsessed with nailing that exact point where every bite blows your mind.\nJudit’s the one who doesn’t let a single detail slip: new recipes, wild ideas, and that rebel twist that turns an order into an experience.\nTogether, we pour in passion, dedication, and a whole lot of heart so every burger reflects who we are: real, close, and madly in love with what we do.\nHere, we don’t just make burgers… we serve up a shot of happiness between two buns. Welcome to Trempat Burger, where coming back isn’t a sin—it’s pretty much mandatory!",
+    "contact": {
+      "title": "Where are we?",
+      "contact-us": "Contact us",
+      "description": "Fill in the form to send us a message.",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "invalid-email": "Invalid email",
+        "invalid-name": "Invalid name",
+        "invalid-subject": "Invalid subject",
+        "invalid-message": "Invalid message",
+        "success": "Message sent successfully",
+        "error": "Error sending the message. Please try again"
+      }
+    },
+    "info": {
+      "delivery": "Home delivery",
+      "schedule": "Schedule",
+      "address": "Address",
+      "phone": "Phone",
+      "mobile": "Mobile",
+      "email": "Email",
+      "social": "Social media",
+      "working-hours": "Opening hours",
+      "working-hours-week": "from 19:00 to 23:00h",
+      "working-hours-weekend": "from 19:00 to 23:30h",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    }
+  },
+  "order": {
+    "steps": {
+      "choose-your-burger": {
+        "title": "Choose your burger",
+        "description": "Pick your burger from all our options. You won’t be disappointed."
+      },
+      "customize-it": {
+        "title": "Customize it",
+        "description": "Choose your patty: smash, double, crispy chicken or vegan. Add your favorite extras and sauces!"
+      },
+      "add-sides": {
+        "title": "Pick your sides",
+        "description": "Chicken wings, nachos, fries and more... we’ve thought of everything."
+      },
+      "add-desserts": {
+        "title": "Save some room",
+        "description": "And don’t forget dessert... you won’t regret it! We promise."
+      },
+      "checkout": {
+        "title": "Place your order",
+        "description": "Order through the link and we’ll take care of the rest."
+      },
+      "enjoy": {
+        "title": "Sit back & enjoy",
+        "description": "Enjoy your meal at home or pick it up at the restaurant."
+      }
+    }
+  },
+  "menu": {
+    "title": "Menu",
+    "check-menu": "Check our menu!",
+    "waiting-for": "What are you waiting for...?",
+    "options": {
+      "vegan-options": "Vegan options",
+      "vegetarian-options": "Vegetarian options",
+      "gluten-free-options": "Gluten-free options",
+      "lactose-free-options": "Lactose-free options"
+    },
+    "categories": {
+      "entrants": "Starters",
+      "burgers": "Burgers",
+      "patates": "Fries",
+      "postres": "Desserts",
+      "salses": "Sauces",
+      "begudes": "Drinks",
+      "varis": "Various"
+    },
+    "entrants": {
+      "croquetesdanecalestilpekines": {
+        "name": "Duck Croquettes Pekin Style",
+        "description": "5 pcs, super creamy, homemade with fresh milk, slow-cooked duck leg and Peking sauce"
+      },
+      "pollastrefregit": {
+        "name": "Fried Chicken",
+        "description": "Extra crispy, previously spiced, marinated and fried with panko. 3 pcs"
+      },
+      "flordecebaatempura": {
+        "name": "Tempura Onion Flower",
+        "description": "Served with truffle mayo, perfect for sharing"
+      },
+      "aletsdepollasteasiatiques": {
+        "name": "Asian Chicken Wings",
+        "description": "6 slow-cooked chicken wings glazed with our Asian sauce, oven-finished and served with wakame salad, lime zest and yuzu mayo"
+      },
+      "natxosambsalsadecheddartrufat": {
+        "name": "Nachos with Truffled Cheddar",
+        "description": "Nachos with Truffled Cheddar Sauce, guacamole, pickled jalapeños and cider-grenadine pickled onions"
+      }
+    },
+    "burgers": {
+      "triplebaco": {
+        "name": "TRIPLE BACON",
+        "description": "Double cheddar cheese, tomato & jalapeño relish, bacon jam caramelized with agave, and smoked bacon mayo"
+      },
+      "iberica": {
+        "name": "IBÉRICA",
+        "description": "Iberian pork rib burger, slow-cooked and glazed with smoked BBQ. Double cheddar cheese, bacon jam, pickled jalapeños, smoked mayo and chipotle ketchup"
+      },
+      "vegana": {
+        "name": "VEGAN",
+        "description": "100% vegan artichoke burger, vegan bun, vegan cheddar, lettuce, caramelized onion, pickle relish, crispy vegan bacon and tartar sauce"
+      },
+      "cabrona": {
+        "name": "CABRONA",
+        "description": "Smoked mayo, beer BBQ, goat cheese, gouda cheese, tomato jam and crispy guanciale"
+      },
+      "cheesey": {
+        "name": "CHEESEY",
+        "description": "Triple cheese: Gouda, Cheddar and Monterrey Jack, bacon jam, pickle relish, Japanese mayo and Jack Daniel’s BBQ"
+      },
+      "campera": {
+        "name": "COUNTRY",
+        "description": "Gouda cheese, grilled onion, lettuce, fried egg, crispy bacon and truffle mayo"
+      },
+      "classica": {
+        "name": "CLASSIC",
+        "description": "Gouda cheese, raw onion, lettuce, pickles, smoked mustard mayo and organic ketchup"
+      },
+      "porca": {
+        "name": "PULLED PORK",
+        "description": "Monterrey Jack cheese, caramelized onion, pickles, pulled pork, double crispy bacon, Emy sauce and smoked BBQ"
+      },
+      "burgertemporada": {
+        "name": "BURGER OF THE MONTH",
+        "description": "Check our social media to see this month’s burger"
+      }
+    },
+    "patates": {
+      "classiques": {
+        "name": "Classic Fries",
+        "description": "Traditional fries, but better"
+      },
+      "combo": {
+        "name": "Combo",
+        "description": "Mix of classic fries and sweet potato"
+      },
+      "moniato": {
+        "name": "Sweet Potato",
+        "description": "Extra crispy sweet potato fries"
+      }
+    },
+    "postres": {
+      "cookiedevainillaixocolatablanca": {
+        "name": "Vanilla & White Chocolate Cookie",
+        "description": "Delicious vanilla and white chocolate cookie with pistachio praline, sweet popcorn and marshmallow"
+      },
+      "newyorkrolldenutella": {
+        "name": "NUTELLA NEW YORK ROLL",
+        "description": "Delicious croissant dough filled with Nutella, topped with chocolate and tricolor pearls"
+      },
+      "cheesecakedeformatgedecabrailotus": {
+        "name": "Goat Cheese & Lotus Cheesecake",
+        "description": "Lotus biscuit base and triple goat cheese, mascarpone and cream cheesecake, topped with Lotus spread"
+      }
+    },
+    "salses": {
+      "maionesatrempadapicant": {
+        "name": "Spicy Trempat Mayo",
+        "description": ""
+      }
+    },
+    "begudes": {
+      "cervesavolldamm": {
+        "name": "Voll Damm Beer",
+        "description": "Can 33cl"
+      },
+      "aigua50cl": {
+        "name": "Water 50cl",
+        "description": "Bottle 50cl"
+      },
+      "acuariustaronja": {
+        "name": "Aquarius Orange",
+        "description": "Can 33cl"
+      },
+      "clara": {
+        "name": "Shandy",
+        "description": "Can 33cl"
+      },
+      "fantallimona": {
+        "name": "Fanta Lemon",
+        "description": "Can 33cl"
+      },
+      "fantataronja": {
+        "name": "Fanta Orange",
+        "description": "Can 33cl"
+      },
+      "aquarius": {
+        "name": "Aquarius",
+        "description": "Can 33cl"
+      },
+      "cervesaestrelladamm": {
+        "name": "Estrella Damm Beer",
+        "description": "Bottle 33cl"
+      },
+      "cervesadaurasensegluten": {
+        "name": "Daura Gluten-Free Beer",
+        "description": "Can 33cl"
+      },
+      "cervesasensealcoholfreedamm": {
+        "name": "Free Damm Alcohol-Free Beer",
+        "description": "Can 33cl"
+      },
+      "cervesatorradasensealcoholfreedamm": {
+        "name": "Free Damm Toasted Alcohol-Free Beer",
+        "description": "Can 33cl"
+      },
+      "cocacola": {
+        "name": "Coca Cola",
+        "description": "Can 33cl"
+      },
+      "colazero": {
+        "name": "Coca Cola Zero",
+        "description": "Can 33cl"
+      },
+      "nestea": {
+        "name": "Nestea",
+        "description": "Can 33cl"
+      }
+    },
+    "varis": {
+      "varis": {
+        "name": "Various",
+        "description": "Various"
+      }
+    }
+  },
+  "allergens": {
+    "title": "Allergens",
+    "description": "Please inform our staff if you have any food allergy or intolerance. We’ll be happy to help you choose suitable options."
+  },
+  "options": {
+    "vegan": "Vegan",
+    "vegetarian": "Vegetarian",
+    "vegan-options": "We have vegan options",
+    "vegetarian-options": "We have vegetarian options",
+    "gluten-free-options": "We have gluten-free options",
+    "lactose-free-options": "We have lactose-free options",
+    "spicy": "Spicy",
+    "gluten-free": "Gluten-free"
+  },
+  "errors": {
+    "name": "Error",
+    "title": "Oops! An unexpected error occurred.",
+    "message1": "Please try again later.",
+    "message2": "If the problem persists, contact us",
+    "contact-here": " through this link.",
+    "go-back-home": "Back to home"
+  }
+}

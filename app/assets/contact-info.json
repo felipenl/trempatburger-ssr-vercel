@@ -1,0 +1,31 @@
+{
+  "url": "https://trempatburger.com",
+  "onlineOrderUrl": "https://app.foodyservice.com/business/0ba6bd9c-bfd4-4305-b489-0ac76f27cd64",
+  "title": "Trempat Burger",
+  "description": "Trempat Burger - Hamburgueseria Artesana a Cardedeu. Menjar ràpid de qualitat amb ingredients frescos i locals. Gaudeix de les nostres hamburgueses, patates fregides i begudes en un ambient acollidor.",
+  "address": "Carrer Rifanyes 14, Local 6D, 08440, Cardedeu, Barcelona",
+  "phone": "935292848",
+  "mobile": "670217573",
+  "prefix": "+34",
+  "email": "trempatburger@gmail.com",
+  "instagram": "trempat.burger",
+  "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.198401529322!2d2.3604287766496923!3d41.62984277127015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c912285a8d79%3A0xa94f8ed2fe8f9584!2sTREMPAT%20burger!5e0!3m2!1sen!2ses!4v1757049305461!5m2!1sen!2ses",
+  "meta": {
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrer Rifanyes, 14",
+      "addressLocality": "Cardedeu",
+      "addressRegion": "Barcelona",
+      "postalCode": "08440",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.6399,
+      "longitude": 2.3538
+    },
+    "sameAs": ["https://www.instagram.com/trempat.burger"],
+    "priceRange": "€",
+    "openingHours": ["Mo-Th 19:00-23:00", "Fr-Sa 19:00-23:30", "Su 19:00-23:00"]
+  }
+}

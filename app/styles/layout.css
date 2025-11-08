@@ -1,0 +1,77 @@
+html,
+body,
+.layout {
+  @apply overflow-x-clip scroll-smooth;
+}
+
+html {
+  @apply min-h-svh w-full;
+}
+
+body {
+  @apply font-roboto min-h-svh w-full;
+}
+
+.layout {
+  @apply flex min-h-svh flex-col;
+
+  a {
+    @apply hover:text-trempat-red;
+  }
+
+  .header,
+  .footer {
+    @apply bg-background z-20 shrink-0 p-2 shadow-md lg:px-8;
+    button {
+      @apply transition-transform hover:scale-110;
+    }
+  }
+
+  .header {
+    @apply border-b-foreground/10 sticky top-0 border-b;
+
+    .brand {
+      @apply text-trempat-red flex flex-row items-center justify-center font-black;
+    }
+
+    .brand .logo {
+      @apply animate-in slide-in-from-left m-2 h-10 transition-all;
+    }
+
+    .main-nav {
+      @apply mx-auto lg:block;
+
+      .menu-icon {
+        @apply mr-2 inline-block;
+      }
+
+      .menu-item {
+        @apply m-2 p-8 text-lg;
+      }
+
+      li {
+        @apply transition-all;
+
+        &:hover {
+          @apply mx-6 scale-[1.15] [&_svg]:rotate-360!;
+        }
+      }
+    }
+  }
+
+  .layout-content {
+    @apply relative flex w-full flex-1 flex-col items-center justify-start overflow-x-clip px-8 md:px-12 lg:px-20;
+
+    a {
+      @apply hover:text-trempat-red;
+    }
+  }
+
+  .footer {
+    @apply border-t-foreground/10 border-t;
+  }
+}
+
+button {
+  @apply transition-all hover:scale-110;
+}

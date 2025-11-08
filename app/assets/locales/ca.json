@@ -1,0 +1,309 @@
+{
+  "common": {
+    "loading": "Carregant",
+    "error": "S'ha produït un error",
+    "retry": "Torna-ho a intentar",
+    "submit": "Enviar",
+    "submitting": "Enviant",
+    "reset": "Esborrar"
+  },
+  "theme": {
+    "light": "Clar",
+    "dark": "Fosc",
+    "system": "Sistema",
+    "toggle": "Canviar tema",
+    "menu": "Menu"
+  },
+  "lang": {
+    "code": "ca",
+    "name": "Català",
+    "toggle": "Canviar idioma"
+  },
+  "brand": {
+    "name": "Trempat Burger",
+    "slogan": "Aixó no es menjar, és pecar.\nBenvingut al Trempat!",
+    "description": "Trempat Burger no és una hamburgueseria qualsevol.\nAquí tot es fa a lo bèstia: pans sucosos, carn de vaca vella al punt perfecte i receptes que trenquen amb el de sempre.\nEns agraden les mescles atrevides, els toppings que sorprenen i aquell toc canalla que fa que cada burger sigui única. Tant se val si te la menges al local, te l’endús o t’arriba a casa: cada Trempat està pensada perquè diguis “buah, quina passada” des del primer mos.\nEn resum: hamburgueses amb ànima, sense filtres i amb molt de rock’n’roll."
+  },
+  "nav": {
+    "home": "Inici",
+    "menu": "Carta",
+    "about": "Sobre nosaltres",
+    "order": "Comanda online",
+    "back-to-top": "Tornar amunt"
+  },
+  "not-found": {
+    "title": "La pàgina no existeix"
+  },
+  "home": {
+    "title": "Trempat Burger"
+  },
+  "about": {
+    "title": "Sobre Trempat Burger",
+    "who-we-are": "Qui som?",
+    "we-are": "Som la Judit i en Miki, la parella culpable que a Cardedeu ningú pugui tornar a mirar una hamburguesa de la mateixa manera.\nEn Miki viu enganxat a la perfecció, obsessionat amb clavar aquell punt exacte que fa que cada mos sigui un escàndol.\nLa Judit és qui no deixa escapar cap detall: receptes noves, idees boges i aquell toc canalla que converteix una comanda en una experiència.\nJunts hi posem il·lusió, proximitat i molta dedicació perquè cada hamburguesa sigui un reflex del que som: autèntics, propers i amb molt de carinyo pel que fem.\nAquí no fem hamburgueses… servim un xut de felicitat entre pa i pa. Benvingut a Trempat Burger, on repetir no és cap pecat, és gairebé una obligació!",
+    "contact": {
+      "title": "On som?",
+      "contact-us": "Contacta'ns",
+      "description": "Omple el formulari per enviar-nos un missatge.",
+      "form": {
+        "name": "Nom",
+        "email": "Correu electrònic",
+        "subject": "Assumpte",
+        "message": "Missatge",
+        "invalid-email": "Correu electrònic invàlid",
+        "invalid-name": "El nom és invàlid",
+        "invalid-subject": "L'assumpte és invàlid",
+        "invalid-message": "El missatge és invàlid",
+        "success": "Missatge enviat amb èxit",
+        "error": "Error en enviar el missatge. Si us plau, torna-ho a intentar"
+      }
+    },
+    "info": {
+      "delivery": "Enviament a domicili",
+      "schedule": "Horari",
+      "address": "Adreça",
+      "phone": "Telèfon",
+      "mobile": "Mòbil",
+      "email": "Correu electrònic",
+      "social": "Xarxes socials",
+      "working-hours": "Horari d'obertura",
+      "working-hours-week": "de 19:00 a 23:00h",
+      "working-hours-weekend": "de 19:00 a 23:30h",
+      "monday": "Dilluns",
+      "tuesday": "Dimarts",
+      "wednesday": "Dimecres",
+      "thursday": "Dijous",
+      "friday": "Divendres",
+      "saturday": "Dissabte",
+      "sunday": "Diumenge"
+    }
+  },
+  "order": {
+    "steps": {
+      "choose-your-burger": {
+        "title": "Tria la teva hamburguesa",
+        "description": "Escull la teva hamburguesa entre totes les nostres opcions. No et quedaràs indiferent."
+      },
+      "customize-it": {
+        "title": "Fes-la a la teva manera",
+        "description": "Tria la carn: smash, doble, pollastre cruixent o vegana. I afegeix els teus extres i salses preferides!"
+      },
+      "add-sides": {
+        "title": "Tria els teus acompanyaments",
+        "description": "Aletes de pollastre, natxos, patates i més... ho hem pensat tot."
+      },
+      "add-desserts": {
+        "title": "Deixa una mica d'espai",
+        "description": "I guarda un forat per a les postres... no te'n penediràs! T'ho prometem."
+      },
+      "checkout": {
+        "title": "Fes la teva comanda",
+        "description": "Fes la comanda a través de l'enllaç i nosaltres ens encarreguem de la resta."
+      },
+      "enjoy": {
+        "title": "Relaxa't i gaudeix",
+        "description": "Gaudeix del teu menjar a casa o recull-lo al local."
+      }
+    }
+  },
+  "menu": {
+    "title": "Menú",
+    "check-menu": "Fes un cop d'ull a la carta!",
+    "waiting-for": "A què esperes...?",
+    "options": {
+      "vegan-options": "Opcions veganes",
+      "vegetarian-options": "Opcions vegetarianes",
+      "gluten-free-options": "Opcions sense gluten",
+      "lactose-free-options": "Opcions sense lactosa"
+    },
+    "categories": {
+      "entrants": "Entrants",
+      "burgers": "Hamburgueses",
+      "patates": "Patates",
+      "postres": "Postres",
+      "salses": "Salses",
+      "begudes": "Begudes",
+      "varis": "Varis"
+    },
+    "entrants": {
+      "croquetesdanecalestilpekines": {
+        "name": "Croquetes d'Ànec a l'Estil Pekinès",
+        "description": "5 unitats, súper cremoses, fetes a casa amb llet fresca, cuixa d'ànec a baixa temperatura i salsa pequinesa"
+      },
+      "pollastrefregit": {
+        "name": "Pollastre Fregit",
+        "description": "Extra cruixent, prèviament especiat, marinat i fregit amb panko. 3 unitats"
+      },
+      "flordecebaatempura": {
+        "name": "Flor de Ceba en Tempura",
+        "description": "Acompanyada de maionesa trufada, perfecta per compartir"
+      },
+      "aletsdepollasteasiatiques": {
+        "name": "Aletes de Pollastre Asiàtiques",
+        "description": "6 aletes de pollastre cuinades a baixa temperatura amb la nostra laca asiàtica, acabades al forn i acompanyades d'amanida wakame, ratlladura de llima i maionesa de yuzu"
+      },
+      "natxosambsalsadecheddartrufat": {
+        "name": "Natxos amb Cheddar Trufat",
+        "description": "Natxos amb Salsa de Cheddar trufat, guacamole, jalapeño encurtit i ceba osmotitzada amb sidra i granadina"
+      }
+    },
+    "burgers": {
+      "triplebaco": {
+        "name": "TRIPLE BACON",
+        "description": "Doble formatge cheddar, relish de tomàquet i jalapeño, melmelada de bacon caramel·litzat amb atzavara i maionesa de bacon fumat"
+      },
+      "iberica": {
+        "name": "IBÈRICA",
+        "description": "Hamburguesa de costella de porc ibèric, cuinada a baixa temperatura i lacada amb barbacoa fumada. Doble formatge cheddar, melmelada de bacon, jalapeño encurtit, maionesa fumada i quètxup de xilis chipotle"
+      },
+      "vegana": {
+        "name": "VEGANA",
+        "description": "Hamburguesa 100% vegana de carxofa, brioix vegà, formatge cheddar vegà, enciam, ceba caramel·litzada, relish de cogombrets, bacon vegà cruixent i salsa tàrtara"
+      },
+      "cabrona": {
+        "name": "CABRONA",
+        "description": "Maionesa fumada, barbacoa de cervesa, formatge de cabra, formatge gouda, melmelada de tomàquet i guanciale cruixent"
+      },
+      "cheesey": {
+        "name": "CHEESEY",
+        "description": "Triple de formatges Gouda, Cheddar i Monterrey Jack, melmelada de bacon, relish de cogombrets, maionesa japonesa i barbacoa de Jack Daniel's"
+      },
+      "campera": {
+        "name": "CAMPERA",
+        "description": "Formatge Gouda, ceba a la planxa, enciam, ou ferrat, bacon cruixent i maionesa trufada"
+      },
+      "classica": {
+        "name": "CLÀSSICA",
+        "description": "Formatge Gouda, ceba crua, enciam, cogombrets, maionesa de mostassa fumada i quètxup orgànic"
+      },
+      "porca": {
+        "name": "PORCA",
+        "description": "Formatge Monterrey Jack, ceba caramel·litzada, cogombrets, pulled pork, doble bacon cruixent, salsa Emy i barbacoa fumada"
+      },
+      "burgertemporada": {
+        "name": "HAMBURGUESA DEL MES",
+        "description": "Consulta les nostres xarxes socials per saber quina és la hamburguesa del mes"
+      }
+    },
+    "patates": {
+      "classiques": {
+        "name": "Clàssiques",
+        "description": "Patates fregides de tota la vida, però més bones"
+      },
+      "combo": {
+        "name": "Combo",
+        "description": "Combo de patates clàssiques i moniato"
+      },
+      "moniato": {
+        "name": "Moniato",
+        "description": "Patates de moniato fregides extra cruixents"
+      }
+    },
+    "postres": {
+      "cookiedevainillaixocolatablanca": {
+        "name": "Cookie de Vainilla i Xocolata Blanca",
+        "description": "Deliciosa galeta de vainilla i xocolata blanca amb praliné de festucs, crispetes dolces i núvol de sucre"
+      },
+      "newyorkrolldenutella": {
+        "name": "NEW YORK ROLL DE NUTELLA",
+        "description": "Deliciosa massa de croissant farcida de Nutella, coberta de xocolata i perles tricolor"
+      },
+      "cheesecakedeformatgedecabrailotus": {
+        "name": "Cheesecake de Formatge de Cabra i Lotus",
+        "description": "Base de galeta Lotus i cheesecake de triple formatge de cabra, mascarpone i nata, amb un deliciós topping de crema Lotus"
+      }
+    },
+    "salses": {
+      "maionesatrempadapicant": {
+        "name": "Maionesa Trempada Picant",
+        "description": ""
+      }
+    },
+    "begudes": {
+      "cervesavolldamm": {
+        "name": "Cervesa Voll Damm",
+        "description": "Llauna 33cl"
+      },
+      "aigua50cl": {
+        "name": "Aigua 50cl",
+        "description": "Aigua de 50cl"
+      },
+      "acuariustaronja": {
+        "name": "Aquarius Taronja",
+        "description": "Llauna 33cl"
+      },
+      "clara": {
+        "name": "Clara",
+        "description": "Llauna 33cl"
+      },
+      "fantallimona": {
+        "name": "Fanta Llimona",
+        "description": "Llauna 33cl"
+      },
+      "fantataronja": {
+        "name": "Fanta Taronja",
+        "description": "Llauna 33cl"
+      },
+      "aquarius": {
+        "name": "Aquarius",
+        "description": "Llauna 33cl"
+      },
+      "cervesaestrelladamm": {
+        "name": "Cervesa Estrella Damm",
+        "description": "Ampolla 33cl"
+      },
+      "cervesadaurasensegluten": {
+        "name": "Cervesa Daura Sense Gluten",
+        "description": "Llauna 33cl"
+      },
+      "cervesasensealcoholfreedamm": {
+        "name": "Cervesa Sense Alcohol Free Damm",
+        "description": "Llauna 33cl"
+      },
+      "cervesatorradasensealcoholfreedamm": {
+        "name": "Cervesa Torrada Sense Alcohol Free Damm",
+        "description": "Llauna 33cl"
+      },
+      "cocacola": {
+        "name": "Coca Cola",
+        "description": "Llauna 33cl"
+      },
+      "colazero": {
+        "name": "Coca Cola Zero",
+        "description": "Llauna 33cl"
+      },
+      "nestea": {
+        "name": "Nestea",
+        "description": "Llauna 33cl"
+      }
+    },
+    "varis": {
+      "varis": {
+        "name": "Varis",
+        "description": "Varis"
+      }
+    }
+  },
+  "allergens": {
+    "title": "Al·lèrgens",
+    "description": "Si us plau, informa el nostre personal si tens alguna al·lèrgia o intolerància alimentària. Estarem encantats d'ajudar-te a triar opcions adequades per a tu."
+  },
+  "options": {
+    "vegan": "Vegà",
+    "vegetarian": "Vegetarià",
+    "vegan-options": "Tenim opcions veganes",
+    "vegetarian-options": "Tenim opcions vegetarianes",
+    "gluten-free-options": "Tenim opcions sense gluten",
+    "lactose-free-options": "Tenim opcions sense lactosa",
+    "spicy": "Picant",
+    "gluten-free": "Sense gluten"
+  },
+  "errors": {
+    "name": "Error",
+    "title": "Ooops! S'ha produït un error inesperat.",
+    "message1": "Si us plau, torna-ho a intentar més tard.",
+    "message2": "Si el problema persisteix, contacta amb nosaltres",
+    "contact-here": " a través d'aquest enllaç.",
+    "go-back-home": "Tornar a l'inici"
+  }
+}

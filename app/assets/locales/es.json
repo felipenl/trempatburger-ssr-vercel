@@ -1,0 +1,309 @@
+{
+  "common": {
+    "loading": "Cargando",
+    "error": "Ha ocurrido un error",
+    "retry": "Volver a intentar",
+    "submit": "Enviar",
+    "submitting": "Enviando",
+    "reset": "Borrar"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema",
+    "toggle": "Cambiar tema",
+    "menu": "Menu"
+  },
+  "lang": {
+    "code": "es",
+    "name": "Castellano",
+    "toggle": "Cambiar idioma"
+  },
+  "brand": {
+    "name": "Trempat Burger",
+    "slogan": "Esto no es comer, es pecar.\n¡Bienvenido al Trempat!",
+    "description": "Trempat Burger no es un local de hamburguesas cualquiera.\nAquí todo se hace a lo grande: panes jugosos, carne de vaca vieja con el punto perfecto y recetas que rompen con lo típico.\n\nNos gustan las mezclas atrevidas, los toppings que sorprenden y ese toque canalla que hace que cada burger sea única. Da igual si te la comes en el local, la recoges para llevar o te llega a casa: cada Trempat está pensado para que digas “buah, qué pasada” desde el primer mordisco.\n\nEn resumen: hamburguesas con alma, sin filtros y con mucho rock’n’roll."
+  },
+  "nav": {
+    "home": "Inicio",
+    "menu": "Carta",
+    "about": "Sobre nosotros",
+    "order": "Pedido online",
+    "back-to-top": "Volver arriba"
+  },
+  "not-found": {
+    "title": "La página no existe"
+  },
+  "home": {
+    "title": "Trempat Burger"
+  },
+  "about": {
+    "title": "Sobre Trempat Burger",
+    "who-we-are": "¿Quiénes somos?",
+    "we-are": "Somos Judit y Miki, la pareja culpable de que en Cardedeu nadie pueda volver a mirar una hamburguesa de la misma manera.\nMiki vive pegado a la perfección, obsesionado con mejorar ese punto perfecto que hace que cada mordisco sea un escándalo.\nJudit es la que no deja pasar ni un detalle: recetas nuevas, ideas locas y ese toque canalla que convierte un pedido en una experiencia.\nJuntos trabajamos con ilusión, proximidad y mucha dedicación para que cada hamburguesa sea un reflejo de lo que somos: auténticos, cercanos y con mucho cariño por lo que hacemos.\nAquí no hacemos hamburguesas… servimos un chute de felicidad entre pan y pan. Bienvenido a Trempat Burger, donde repetir no es un pecado, ¡es casi una obligación!",
+    "contact": {
+      "title": "Dónde estamos?",
+      "contact-us": "Contáctanos",
+      "description": "Rellena el formulario para enviarnos un mensaje.",
+      "form": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "subject": "Asunto",
+        "message": "Mensaje",
+        "invalid-email": "Correo electrónico inválido",
+        "invalid-name": "El nombre es inválido",
+        "invalid-subject": "El asunto es inválido",
+        "invalid-message": "El mensaje es inválido",
+        "success": "Mensaje enviado con éxito",
+        "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo"
+      }
+    },
+    "info": {
+      "delivery": "Envío a domicilio",
+      "schedule": "Horario",
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "mobile": "Móvil",
+      "email": "Correo electrónico",
+      "social": "Redes sociales",
+      "working-hours": "Horario de apertura",
+      "working-hours-week": "de 19:00 a 23:00h",
+      "working-hours-weekend": "de 19:00 a 23:30h",
+      "monday": "Lunes",
+      "tuesday": "Martes",
+      "wednesday": "Miércoles",
+      "thursday": "Jueves",
+      "friday": "Viernes",
+      "saturday": "Sábado",
+      "sunday": "Domingo"
+    }
+  },
+  "order": {
+    "steps": {
+      "choose-your-burger": {
+        "title": "Elige tu hamburguesa",
+        "description": "Escoge tu hamburguesa entre todas nuestras opciones. No te quedarás indiferente."
+      },
+      "customize-it": {
+        "title": "Hazla a tu manera",
+        "description": "Elige tu carne: smash, doble, pollo crujiente o vegana. ¡Y añade tus extras y salsas favoritas!"
+      },
+      "add-sides": {
+        "title": "Elige tus acompañamientos",
+        "description": "Alitas de pollo, nachos, patatas y más... lo hemos pensado todo."
+      },
+      "add-desserts": {
+        "title": "Deja un poco de espacio",
+        "description": "Y guarda un hueco para el postre... ¡no te arrepentirás! Te lo prometemos."
+      },
+      "checkout": {
+        "title": "Realiza tu pedido",
+        "description": "Haz tu pedido a través del enlace y nosotros nos encargamos del resto."
+      },
+      "enjoy": {
+        "title": "Relájate y disfruta",
+        "description": "Disfruta de tu comida en casa o recógela en el local."
+      }
+    }
+  },
+  "menu": {
+    "title": "Menú",
+    "check-menu": "¡Mira la carta!",
+    "waiting-for": "¿A qué esperas...?",
+    "options": {
+      "vegan-options": "Opciones veganas",
+      "vegetarian-options": "Opciones vegetarianas",
+      "gluten-free-options": "Opciones sin gluten",
+      "lactose-free-options": "Opciones sin lactosa"
+    },
+    "categories": {
+      "entrants": "Entrantes",
+      "burgers": "Hamburguesas",
+      "patates": "Patatas",
+      "postres": "Postres",
+      "salses": "Salsas",
+      "begudes": "Bebidas",
+      "varis": "Varios"
+    },
+    "entrants": {
+      "croquetesdanecalestilpekines": {
+        "name": "Croquetas de Pato al Estilo Pekinés",
+        "description": "5 unidades, súper cremosas, hechas en casa con leche fresca, muslo de pato a baja temperatura y salsa pequinesa"
+      },
+      "pollastrefregit": {
+        "name": "Pollo Frito",
+        "description": "Extra crujiente, previamente especiado, marinado y frito con panko. 3 unidades"
+      },
+      "flordecebaatempura": {
+        "name": "Flor de Cebolla en Tempura",
+        "description": "Acompañada de mayonesa trufada, perfecta para compartir"
+      },
+      "aletsdepollasteasiatiques": {
+        "name": "Alitas de Pollo Asiáticas",
+        "description": "6 alitas de pollo cocinadas a baja temperatura con nuestra laca asiática, horneadas y acompañadas de ensalada wakame, ralladura de lima y mayonesa de yuzu"
+      },
+      "natxosambsalsadecheddartrufat": {
+        "name": "Nachos con Cheddar Trufado",
+        "description": "Nachos con Salsa de Cheddar Trufado, guacamole, jalapeño encurtido y cebolla osmotizada con sidra y granadina"
+      }
+    },
+    "burgers": {
+      "triplebaco": {
+        "name": "TRIPLE BACON",
+        "description": "Doble queso cheddar, relish de tomate y jalapeño, mermelada de bacon caramelizado con agave y mayonesa de bacon ahumado"
+      },
+      "iberica": {
+        "name": "IBÉRICA",
+        "description": "Hamburguesa de costilla de cerdo ibérico, cocinada a baja temperatura y lacada con barbacoa ahumada. Doble queso cheddar, mermelada de bacon, jalapeño encurtido, mayonesa ahumada y kétchup de chiles chipotles"
+      },
+      "vegana": {
+        "name": "VEGANA",
+        "description": "Hamburguesa 100% vegana de alcachofa, pan brioche vegano, queso cheddar vegano, lechuga, cebolla caramelizada, relish de pepinillos, bacon vegano crujiente y salsa tártara"
+      },
+      "cabrona": {
+        "name": "CABRONA",
+        "description": "Mayonesa ahumada, barbacoa de cerveza, queso de cabra, queso gouda, mermelada de tomate y guanciale crujiente"
+      },
+      "cheesey": {
+        "name": "CHEESEY",
+        "description": "Triple de quesos Gouda, Cheddar y Monterrey Jack, mermelada de bacon, relish de pepinillos, mayonesa japonesa y barbacoa de Jack Daniel's"
+      },
+      "campera": {
+        "name": "CAMPERA",
+        "description": "Queso Gouda, cebolla a la plancha, lechuga, huevo frito, bacon crujiente y mayonesa trufada"
+      },
+      "classica": {
+        "name": "CLÁSICA",
+        "description": "Queso Gouda, cebolla cruda, lechuga, pepinillos, mayonesa de mostaza ahumada y kétchup orgánico"
+      },
+      "porca": {
+        "name": "PORCA",
+        "description": "Queso Monterrey Jack, cebolla caramelizada, pepinillos, pulled pork, doble bacon crujiente, salsa Emy y barbacoa ahumada"
+      },
+      "burgertemporada": {
+        "name": "HAMBURGUESA DEL MES",
+        "description": "Consulta nuestras redes sociales para saber cuál es la hamburguesa del mes"
+      }
+    },
+    "patates": {
+      "classiques": {
+        "name": "Clásicas",
+        "description": "Patatas fritas de toda la vida, pero más ricas"
+      },
+      "combo": {
+        "name": "Combo",
+        "description": "Combo de patatas clásicas y de boniato"
+      },
+      "moniato": {
+        "name": "Boniato",
+        "description": "Patatas de boniato fritas extra crujientes"
+      }
+    },
+    "postres": {
+      "cookiedevainillaixocolatablanca": {
+        "name": "Cookie de Vainilla y Chocolate Blanco",
+        "description": "Deliciosa galleta de vainilla y chocolate blanco con praliné de pistachos, palomitas dulces y nube de azúcar"
+      },
+      "newyorkrolldenutella": {
+        "name": "NEW YORK ROLL DE NUTELLA",
+        "description": "Deliciosa masa de croissant rellena de Nutella, cubierta de chocolate y perlas tricolor"
+      },
+      "cheesecakedeformatgedecabrailotus": {
+        "name": "Cheesecake de Queso de Cabra y Lotus",
+        "description": "Base de galleta Lotus y cheesecake fundente de triple queso de cabra, mascarpone y nata, con un delicioso topping de crema Lotus"
+      }
+    },
+    "salses": {
+      "maionesatrempadapicant": {
+        "name": "Mayonesa Trempada Picante",
+        "description": ""
+      }
+    },
+    "begudes": {
+      "cervesavolldamm": {
+        "name": "Cerveza Voll Damm",
+        "description": "Lata 33cl"
+      },
+      "aigua50cl": {
+        "name": "Agua 50cl",
+        "description": "Agua de 50cl"
+      },
+      "acuariustaronja": {
+        "name": "Aquarius Naranja",
+        "description": "Lata 33cl"
+      },
+      "clara": {
+        "name": "Clara",
+        "description": "Lata 33cl"
+      },
+      "fantallimona": {
+        "name": "Fanta Limón",
+        "description": "Lata 33cl"
+      },
+      "fantataronja": {
+        "name": "Fanta Naranja",
+        "description": "Lata 33cl"
+      },
+      "aquarius": {
+        "name": "Aquarius",
+        "description": "Lata 33cl"
+      },
+      "cervesaestrelladamm": {
+        "name": "Cerveza Estrella Damm",
+        "description": "Botella 33cl"
+      },
+      "cervesadaurasensegluten": {
+        "name": "Cerveza Daura Sin Gluten",
+        "description": "Lata 33cl"
+      },
+      "cervesasensealcoholfreedamm": {
+        "name": "Cerveza Sin Alcohol Free Damm",
+        "description": "Lata 33cl"
+      },
+      "cervesatorradasensealcoholfreedamm": {
+        "name": "Cerveza Tostada Sin Alcohol Free Damm",
+        "description": "Lata 33cl"
+      },
+      "cocacola": {
+        "name": "Coca Cola",
+        "description": "Lata 33cl"
+      },
+      "colazero": {
+        "name": "Coca Cola Zero",
+        "description": "Lata 33cl"
+      },
+      "nestea": {
+        "name": "Nestea",
+        "description": "Lata 33cl"
+      }
+    },
+    "varis": {
+      "varis": {
+        "name": "Varios",
+        "description": "Varios"
+      }
+    }
+  },
+  "allergens": {
+    "title": "Alérgenos",
+    "description": "Por favor, informa a nuestro personal si tienes alguna alergia o intolerancia alimentaria. Estaremos encantados de ayudarte a elegir opciones adecuadas para ti."
+  },
+  "options": {
+    "vegan": "Vegano",
+    "vegetarian": "Vegetariano",
+    "vegan-options": "Tenemos opciones veganas",
+    "vegetarian-options": "Tenemos opciones vegetarianas",
+    "gluten-free-options": "Tenemos opciones sin gluten",
+    "lactose-free-options": "Tenemos opciones sin lactosa",
+    "spicy": "Picante",
+    "gluten-free": "Sin gluten"
+  },
+  "errors": {
+    "name": "Error",
+    "title": "¡Ooops! Ha ocurrido un error inesperado.",
+    "message1": "Por favor, inténtalo de nuevo más tarde.",
+    "message2": "Si el problema persiste, contacta con nosotros",
+    "contact-here": " a través de este enlace.",
+    "go-back-home": "Volver a inicio"
+  }
+}

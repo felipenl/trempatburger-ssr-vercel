@@ -1,0 +1,248 @@
+{
+  "entrants": {
+    "display": true,
+    "id": "entrants",
+    "key": "menu.categories.entrants",
+    "items": [
+      {
+        "id": "croquetesdanecalestilpekines",
+        "key": "menu.entrants.croquetesdanecalestilpekines",
+        "image": "croquetas.jpg",
+        "descriptionKey": "menu.entrants.croquetesdanecalestilpekines.description"
+      },
+      {
+        "id": "pollastrefregit",
+        "key": "menu.entrants.pollastrefregit",
+        "image": "pollo.jpg",
+        "descriptionKey": "menu.entrants.pollastrefregit.description"
+      },
+      {
+        "id": "flordecebaatempura",
+        "key": "menu.entrants.flordecebaatempura",
+        "image": "cebolla.jpg",
+        "descriptionKey": "menu.entrants.flordecebaatempura.description"
+      },
+      {
+        "id": "aletsdepollasteasiatiques",
+        "key": "menu.entrants.aletsdepollasteasiatiques",
+        "image": "alitas.jpg",
+        "descriptionKey": "menu.entrants.aletsdepollasteasiatiques.description"
+      },
+      {
+        "id": "natxosambsalsadecheddartrufat",
+        "key": "menu.entrants.natxosambsalsadecheddartrufat",
+        "image": "nachos.jpg",
+        "descriptionKey": "menu.entrants.natxosambsalsadecheddartrufat.description"
+      }
+    ]
+  },
+  "burgers": {
+    "display": true,
+    "id": "burgers",
+    "key": "menu.categories.burgers",
+    "items": [
+      {
+        "id": "iberica",
+        "key": "menu.burgers.iberica",
+        "image": "iberica.jpg",
+        "descriptionKey": "menu.burgers.iberica.description"
+      },
+      {
+        "id": "vegana",
+        "key": "menu.burgers.vegana",
+        "image": "vegana.jpg",
+        "descriptionKey": "menu.burgers.vegana.description"
+      },
+      {
+        "id": "cabrona",
+        "key": "menu.burgers.cabrona",
+        "image": "cabrona.jpg",
+        "descriptionKey": "menu.burgers.cabrona.description"
+      },
+      {
+        "id": "cheesey",
+        "key": "menu.burgers.cheesey",
+        "image": "cheesey.jpg",
+        "descriptionKey": "menu.burgers.cheesey.description"
+      },
+      {
+        "id": "campera",
+        "key": "menu.burgers.campera",
+        "image": "campera.jpg",
+        "descriptionKey": "menu.burgers.campera.description"
+      },
+      {
+        "id": "classica",
+        "key": "menu.burgers.classica",
+        "image": "classica.jpg",
+        "descriptionKey": "menu.burgers.classica.description"
+      },
+      {
+        "id": "porca",
+        "key": "menu.burgers.porca",
+        "image": "porca.jpg",
+        "descriptionKey": "menu.burgers.porca.description"
+      },
+      {
+        "id": "burgertemporada",
+        "key": "menu.burgers.burgertemporada",
+        "image": "burgertemporada.png",
+        "descriptionKey": "menu.burgers.burgertemporada.description"
+      }
+    ]
+  },
+  "patates": {
+    "display": true,
+    "id": "patates",
+    "key": "menu.categories.patates",
+    "items": [
+      {
+        "id": "classiques",
+        "key": "menu.patates.classiques",
+        "image": "fritas.jpg",
+        "descriptionKey": "menu.patates.classiques.description"
+      },
+      {
+        "id": "moniato",
+        "key": "menu.patates.moniato",
+        "image": "boniato.jpg",
+        "descriptionKey": "menu.patates.moniato.description"
+      },
+      {
+        "id": "combo",
+        "key": "menu.patates.combo",
+        "image": "combo.png",
+        "descriptionKey": "menu.patates.combo.description"
+      }
+    ]
+  },
+  "postres": {
+    "display": true,
+    "id": "postres",
+    "key": "menu.categories.postres",
+    "icon": "cake",
+    "items": [
+      {
+        "id": "cookiedevainillaixocolatablanca",
+        "key": "menu.postres.cookiedevainillaixocolatablanca",
+        "image": "cookie-vainilla.jpg",
+        "descriptionKey": "menu.postres.cookiedevainillaixocolatablanca.description"
+      },
+      {
+        "id": "newyorkrolldenutella",
+        "key": "menu.postres.newyorkrolldenutella",
+        "image": "nyroll.jpg",
+        "descriptionKey": "menu.postres.newyorkrolldenutella.description"
+      },
+      {
+        "id": "cheesecakedeformatgedecabrailotus",
+        "key": "menu.postres.cheesecakedeformatgedecabrailotus",
+        "image": "cheescake-lotus.jpg",
+        "descriptionKey": "menu.postres.cheesecakedeformatgedecabrailotus.description"
+      }
+    ]
+  },
+  "salses": {
+    "display": false,
+    "id": "salses",
+    "key": "menu.categories.salses",
+    "items": []
+  },
+  "begudes": {
+    "display": false,
+    "id": "begudes",
+    "key": "menu.categories.begudes",
+    "items": [
+      {
+        "id": "cervesavolldamm",
+        "key": "menu.begudes.cervesavolldamm",
+        "image": null,
+        "descriptionKey": "menu.begudes.cervesavolldamm.description"
+      },
+      {
+        "id": "aigua50cl",
+        "key": "menu.begudes.aigua50cl",
+        "image": null,
+        "descriptionKey": "menu.begudes.aigua50cl.description"
+      },
+      {
+        "id": "acuariustaronja",
+        "key": "menu.begudes.acuariustaronja",
+        "image": null,
+        "descriptionKey": "menu.begudes.acuariustaronja.description"
+      },
+      {
+        "id": "clara",
+        "key": "menu.begudes.clara",
+        "image": null,
+        "descriptionKey": "menu.begudes.clara.description"
+      },
+      {
+        "id": "fantallimona",
+        "key": "menu.begudes.fantallimona",
+        "image": null,
+        "descriptionKey": "menu.begudes.fantallimona.description"
+      },
+      {
+        "id": "fantataronja",
+        "key": "menu.begudes.fantataronja",
+        "image": null,
+        "descriptionKey": "menu.begudes.fantataronja.description"
+      },
+      {
+        "id": "aquarius",
+        "key": "menu.begudes.aquarius",
+        "image": null,
+        "descriptionKey": "menu.begudes.aquarius.description"
+      },
+      {
+        "id": "cervesaestrelladamm",
+        "key": "menu.begudes.cervesaestrelladamm",
+        "image": null,
+        "descriptionKey": "menu.begudes.cervesaestrelladamm.description"
+      },
+      {
+        "id": "cervesadaurasensegluten",
+        "key": "menu.begudes.cervesadaurasensegluten",
+        "image": null,
+        "descriptionKey": "menu.begudes.cervesadaurasensegluten.description"
+      },
+      {
+        "id": "cervesasensealcoholfreedamm",
+        "key": "menu.begudes.cervesasensealcoholfreedamm",
+        "image": null,
+        "descriptionKey": "menu.begudes.cervesasensealcoholfreedamm.description"
+      },
+      {
+        "id": "cervesatorradasensealcoholfreedamm",
+        "key": "menu.begudes.cervesatorradasensealcoholfreedamm",
+        "image": null,
+        "descriptionKey": "menu.begudes.cervesatorradasensealcoholfreedamm.description"
+      },
+      {
+        "id": "cocacola",
+        "key": "menu.begudes.cocacola",
+        "image": null,
+        "descriptionKey": "menu.begudes.cocacola.description"
+      },
+      {
+        "id": "colazero",
+        "key": "menu.begudes.colazero",
+        "image": null,
+        "descriptionKey": "menu.begudes.colazero.description"
+      },
+      {
+        "id": "nestea",
+        "key": "menu.begudes.nestea",
+        "image": null,
+        "descriptionKey": "menu.begudes.nestea.description"
+      }
+    ]
+  },
+  "varis": {
+    "display": false,
+    "id": "varis",
+    "key": "menu.categories.varis",
+    "items": null
+  }
+}

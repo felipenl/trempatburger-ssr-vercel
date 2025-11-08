@@ -1,13 +1,15 @@
 {
-  "include": [
-    "**/*",
-    "**/.server/**/*",
-    "**/.client/**/*",
-    ".react-router/types/**/*"
-  ],
+  "include": ["**/*", "**/.server/**/*", "**/.client/**/*", ".react-router/types/**/*"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
-    "types": ["node", "vite/client"],
+    "types": [
+      "node",
+      "vite.config.ts",
+      "vite/client",
+      "vite-plugin-svgr/client",
+      "vite-plugin-svgr",
+      "react-router"
+    ],
     "target": "ES2022",
     "module": "ES2022",
     "moduleResolution": "bundler",
@@ -15,8 +17,20 @@
     "rootDirs": [".", "./.react-router/types"],
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./app/*"]
+      "@/*": ["./app/*"],
+      "@assets/*": ["./app/assets/*"],
+      "@components/*": ["./app/components/*"],
+      "@ui/*": ["./app/components/ui/*"],
+      "@layouts/*": ["./app/layouts/*"],
+      "@hooks/*": ["./app/hooks/*"],
+      "@routes/*": ["./app/routes/*"],
+      "@styles/*": ["./app/styles/*"],
+      "@utils/*": ["./app/utils/*"],
+      "@lib/*": ["./app/lib/*"],
+      "@errors/*": ["./app/errors/*"],
+      "@workers/*": ["workers/*"]
     },
+    "allowImportingTsExtensions": true,
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,

@@ -1,0 +1,191 @@
+.map {
+  @apply border-accent mx-auto my-8 min-h-[400px] w-full flex-1 rounded-md border shadow-lg;
+}
+
+.contact-desc {
+  @apply mb-4 text-lg;
+}
+
+.contact-container {
+  @apply m-2 flex flex-col items-start justify-end space-y-2 lg:m-8;
+
+  &.compact {
+    .contact-element {
+      @apply my-0!;
+    }
+
+    .contact-icon {
+      @apply my-0.5! h-5! w-5!;
+    }
+  }
+
+  .contact-element {
+    @apply flex items-center justify-start px-2;
+
+    li {
+      @apply px-2 py-0.5;
+    }
+  }
+  .contact-icon {
+    @apply m-2 my-1 inline-block h-6! w-6! min-w-6;
+  }
+}
+
+.testimonial {
+  @apply bg-background border-foreground/10 m-2 mx-auto rounded-lg border-2 p-8 text-center text-lg leading-tight font-light italic shadow-lg transition-all hover:scale-105 lg:p-8 lg:text-xl;
+
+  &:hover {
+    svg {
+      @apply scale-125;
+    }
+  }
+}
+
+.menu-card {
+  @apply mx-auto shadow-lg transition-all duration-300 md:m-4!;
+
+  .menu-card-header {
+    @apply absolute top-6 right-0 left-0 flex w-full items-center justify-center;
+  }
+
+  .menu-card-body {
+    @apply m-0 flex h-full flex-col p-0;
+  }
+  .menu-card-image {
+    @apply w-auto rounded-t-lg object-fill lg:min-h-[250px];
+  }
+
+  .menu-card-title {
+    @apply font-riffic m-2 text-center text-2xl text-white! uppercase lg:text-3xl;
+  }
+
+  .menu-card-description {
+    @apply flex-1 overflow-y-auto px-8 py-6 text-lg leading-tight italic lg:min-h-20;
+  }
+}
+
+.back-to-top {
+  @apply fixed z-30 ml-auto duration-500;
+  @apply sticky right-5 bottom-5 mb-5 opacity-0 transition-all;
+  .button {
+    @apply bg-trempat-red animate-in slide-in-from-right flex h-14! cursor-pointer! items-center justify-center gap-0! text-lg!;
+  }
+
+  .icon {
+    @apply h-8! w-8! transition-transform;
+    @apply [&:not(:last-child)]:mr-2!;
+  }
+
+  .text {
+    /* @apply m-0 w-0 p-0 opacity-0; */
+    @apply xl:ml-2 xl:w-auto xl:opacity-100;
+  }
+
+  & :hover {
+    .icon {
+      @apply scale-125;
+    }
+  }
+}
+
+.order-btn {
+  @apply bg-destructive mx-auto text-lg text-white transition-transform md:text-base;
+}
+
+.menu-page {
+  .menu-sidebar {
+    @apply xl:sticky xl:top-18 xl:mx-auto xl:h-[calc(100vsh-4.5em)] xl:pt-10;
+
+    .list {
+      @apply ml-auto flex flex-col justify-start md:justify-center!;
+      @media (max-width: 1024px) {
+        @apply bg-background fixed left-0 z-30 mx-auto w-full max-w-screen flex-row overflow-x-scroll border-b px-4 py-4;
+      }
+    }
+
+    .item {
+      @apply text-lg font-semibold whitespace-nowrap transition-all lg:text-center lg:text-xl lg:whitespace-normal;
+
+      &.active {
+        @apply text-trempat-red;
+      }
+      @media (min-width: 1025px) {
+        @apply my-4 w-full text-xl hover:scale-110;
+      }
+    }
+
+    .title {
+      @apply mx-4 hidden text-center!;
+
+      @media (min-width: 1025px) {
+        @apply mb-4 block;
+      }
+    }
+  }
+
+  .menu-categories {
+    section {
+      @apply mx-1 mb-10 scroll-mt-24 pt-12 sm:mx-2 lg:mx-6 lg:mb-10 lg:pt-0;
+    }
+  }
+}
+
+.circle {
+  @apply bg-trempat-red -top-10 mb-4 flex aspect-square items-center justify-center rounded-full text-2xl font-bold text-white;
+}
+
+.steps-container {
+  @apply relative mx-auto my-5 flex-1 space-y-30 lg:w-3/4;
+
+  .step-line {
+    @apply border-foreground/20 pointer-events-none absolute inset-y-0 left-1/2 z-0 -translate-x-1/2 animate-pulse border-l-2 border-dashed;
+  }
+
+  .step {
+    @apply relative z-10 flex w-[70%] flex-col items-center justify-start rounded-lg border bg-neutral-50 p-8 text-lg shadow-md dark:bg-neutral-900;
+
+    .content {
+      @apply p-2 lg:p-4;
+    }
+    .icon {
+      @apply h-12 w-12;
+    }
+    .title {
+      @apply font-riffic m-2 text-center text-xl leading-tight font-black uppercase lg:m-4;
+    }
+    .description {
+      @apply m-2 text-center leading-tight italic lg:m-4;
+    }
+  }
+}
+
+.menu-page-image {
+  @apply border-background/20 mx-auto mt-0 -mb-8 max-w-3/4 lg:-mb-16 lg:max-w-full;
+
+  .image-container {
+    @apply mx-auto flex w-8/10 items-start justify-center lg:max-w-9/10;
+    & img {
+      @apply mx-auto max-h-[600px] drop-shadow-lg;
+    }
+  }
+
+  .link {
+    @apply font-riffic text-center text-4xl leading-none font-bold uppercase md:text-5xl lg:text-7xl;
+    @apply text-trempat-red! mx-auto my-5 rounded-lg transition-all md:w-3/5;
+
+    svg {
+      @apply text-trempat-red mx-auto flex justify-center transition-all;
+    }
+
+    &:hover {
+      @apply mt-10 scale-110;
+
+      svg {
+        @apply rotate-360 duration-400;
+      }
+    }
+    & a {
+      @apply hover:scale-110;
+    }
+  }
+}

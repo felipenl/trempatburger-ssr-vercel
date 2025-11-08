@@ -5,16 +5,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          '"Inter"',
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif",
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
-        ],
+        roboto: ['Roboto Flex', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        riffic: ['Riffic', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        'trempat-red': '#D90404',
+        'trempat-dark-red': '#730202',
+        'trempat-gray': '#D9D2D5',
+        'trempat-dark-gray': '#0D0D0D',
       },
     },
   },
