@@ -4,7 +4,6 @@ import { defineConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import devtoolsJson from 'vite-plugin-devtools-json';
 import svgr from 'vite-plugin-svgr';
-import vercel from 'vite-plugin-vercel';
 
 export default defineConfig({
   plugins: [
@@ -12,7 +11,6 @@ export default defineConfig({
     tsconfigPaths(),
     tailwindcss(),
     devtoolsJson(),
-    vercel(),
     svgr({
       svgrOptions: { icon: false },
       include: '**/*.svg?react'
