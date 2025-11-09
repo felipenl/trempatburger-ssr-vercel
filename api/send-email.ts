@@ -2,10 +2,6 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import type { Mail } from '@/types/workers';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ status: 'error', message: 'Method Not Allowed' });
-  }
-
   const { name, email, subject, message } = req.body as Mail;
   const MAIL_API_URL = process.env.MAIL_API_URL;
   const MAIL_API_KEY = process.env.MAIL_API_KEY;
