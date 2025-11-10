@@ -32,7 +32,8 @@
     "back-to-top": "Volver arriba"
   },
   "not-found": {
-    "title": "La página no existe"
+    "title": "La página no existe",
+    "subtitle": "Parece que esta página se ha perdido por el camino."
   },
   "home": {
     "title": "Trempat Burger"
