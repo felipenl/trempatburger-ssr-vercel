@@ -15,23 +15,24 @@ import { useTranslation } from 'react-i18next';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { CircleAlert, CircleCheck, Send, Trash } from 'lucide-react';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo } from 'react';
 import Loading from '@components/ui/loading';
-import { FormStatus, type FormStatusType } from '@/types/forms';
+import { Form as RouterForm, useActionData, useNavigation } from 'react-router';
 
 const baseString = 'about.contact.';
 
 function ContactForm() {
   const { t } = useTranslation();
-
-  const [status, setStatus] = useState<FormStatusType>(FormStatus.idle);
+  const actionData = useActionData<{ status: string; message?: string }>();
+  const navigation = useNavigation();
+  const isSubmitting = navigation.state === 'submitting';
 
   const schema = useMemo(
     () =>
       z.object({
         name: z.string().min(2, { error: t(baseString + 'form.invalid-name') }),
         subject: z.string().min(2, { error: t(baseString + 'form.invalid-subject') }),
-        email: z.email({ error: t(baseString + 'form.invalid-email') }),
+        email: z.string().email({ message: t(baseString + 'form.invalid-email') }),
         message: z.string().min(10, { error: t(baseString + 'form.invalid-message') }),
       }),
     [t]
@@ -47,44 +48,19 @@ function ContactForm() {
     },
   });
 
-  const onSubmit = (data: unknown) => {
-    setStatus(FormStatus.loading);
-
-    window
-      .fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      })
-      .then(res => {
-        if (!res.ok) {
-          setStatus(FormStatus.error);
-          return;
-        }
-
-        setStatus(FormStatus.success);
-        form.reset();
-        setTimeout(() => setStatus(FormStatus.idle), 5000);
-      })
-      .catch(e => {
-        console.log(e);
-        setStatus(FormStatus.error);
-      });
-  };
+  useEffect(() => {
+    if (actionData?.status === 'success') {
+      form.reset();
+    }
+  }, [actionData, form]);
 
   return (
     <div id="contact-form">
       <h2 className="mt-0">{t(baseString + 'contact-us')}</h2>
-
       <p className="contact-desc">{t(baseString + 'description')}</p>
+
       <Form {...form}>
-        <form
-          onSubmit={form.handleSubmit(onSubmit)}
-          onReset={() => form.reset()}
-          className="space-y-8"
-        >
+        <RouterForm method="post" className="space-y-8">
           <FormField
             control={form.control}
             name="name"
@@ -92,13 +68,13 @@ function ContactForm() {
               <FormItem>
                 <FormLabel>{t(baseString + 'form.name')}</FormLabel>
                 <FormControl>
-                  <Input placeholder={t(baseString + 'form.name')} {...field} />
+                  <Input placeholder={t(baseString + 'form.name')} {...field} name="name" />
                 </FormControl>
-                <FormDescription />
                 <FormMessage />
               </FormItem>
             )}
           />
+
           <FormField
             control={form.control}
             name="email"
@@ -106,13 +82,13 @@ function ContactForm() {
               <FormItem>
                 <FormLabel>{t(baseString + 'form.email')}</FormLabel>
                 <FormControl>
-                  <Input placeholder={t(baseString + 'form.email')} {...field} />
+                  <Input placeholder={t(baseString + 'form.email')} {...field} name="email" />
                 </FormControl>
-                <FormDescription />
                 <FormMessage />
               </FormItem>
             )}
           />
+
           <FormField
             control={form.control}
             name="subject"
@@ -120,13 +96,13 @@ function ContactForm() {
               <FormItem>
                 <FormLabel>{t(baseString + 'form.subject')}</FormLabel>
                 <FormControl>
-                  <Input placeholder={t(baseString + 'form.subject')} {...field} />
+                  <Input placeholder={t(baseString + 'form.subject')} {...field} name="subject" />
                 </FormControl>
-                <FormDescription />
                 <FormMessage />
               </FormItem>
             )}
           />
+
           <FormField
             control={form.control}
             name="message"
@@ -138,30 +114,27 @@ function ContactForm() {
                     placeholder={t(baseString + 'form.message')}
                     className="min-h-60"
                     {...field}
+                    name="message"
                   />
                 </FormControl>
-                <FormDescription />
                 <FormMessage />
               </FormItem>
             )}
           />
 
           <FormDescription className="min-h-4">
-            <span className="flex items-center justify-items-center gap-2 text-sm">
-              {status === FormStatus.error && (
-                <span className="text-destructive">
-                  <CircleAlert className="mx-1 inline-block" />
-                  {t(baseString + 'form.error')}
-                </span>
-              )}
-
-              {status === FormStatus.success && (
-                <span className="text-green-500">
-                  <CircleCheck className="mx-1 inline-block" />
-                  {t(baseString + 'form.success')}
-                </span>
-              )}
-            </span>
+            {actionData?.status === 'error' && (
+              <span className="text-destructive flex items-center text-sm">
+                <CircleAlert className="mr-1" />
+                {t(baseString + 'form.error')}
+              </span>
+            )}
+            {actionData?.status === 'success' && (
+              <span className="flex items-center text-sm text-green-500">
+                <CircleCheck className="mr-1" />
+                {t(baseString + 'form.success')}
+              </span>
+            )}
           </FormDescription>
 
           <div className="flex items-center justify-end gap-4">
@@ -169,8 +142,8 @@ function ContactForm() {
               <Trash />
               {t('common.reset')}
             </Button>
-            <Button type="submit" variant="outline" disabled={status === FormStatus.loading}>
-              {status === FormStatus.loading ? (
+            <Button type="submit" variant="outline" disabled={isSubmitting}>
+              {isSubmitting ? (
                 <Loading label={t('common.submitting')} className="m-0!" />
               ) : (
                 <>
@@ -180,7 +153,7 @@ function ContactForm() {
               )}
             </Button>
           </div>
-        </form>
+        </RouterForm>
       </Form>
     </div>
   );
