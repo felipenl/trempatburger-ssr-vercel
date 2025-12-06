@@ -1,6 +1,6 @@
 import type { FadeInProps } from '@/types/animations';
 import { Skeleton } from '@components/ui/skeleton';
-import { useLazyMount } from '@hooks/useLazyMount';
+import useLazyMount from '@hooks/useLazyMount';
 import { motion, type UseInViewOptions } from 'framer-motion';
 
 export default function FadeIn({

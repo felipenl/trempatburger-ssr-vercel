@@ -1,7 +1,7 @@
 import { useInView, type UseInViewOptions } from 'framer-motion';
 import { useRef } from 'react';
 
-export function useLazyMount<T extends HTMLElement>({
+export default function useLazyMount<T extends HTMLElement>({
   margin = '-50px',
   once = true,
 }: UseInViewOptions) {
