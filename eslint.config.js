@@ -1,11 +1,10 @@
-import js from '@eslint/js';
-import ts from 'typescript-eslint';
-import react from 'eslint-plugin-react';
-import hooks from 'eslint-plugin-react-hooks';
-import a11y from 'eslint-plugin-jsx-a11y';
-import prettier from 'eslint-plugin-prettier';
-import globals from 'globals';
-import prettierCfg from './prettier.config.js';
+import js from '@eslint/js'
+import ts from 'typescript-eslint'
+import react from 'eslint-plugin-react'
+import hooks from 'eslint-plugin-react-hooks'
+import a11y from 'eslint-plugin-jsx-a11y'
+import prettier from 'eslint-config-prettier'
+import globals from 'globals'
 
 export default [
   {
@@ -31,8 +30,5 @@ export default [
       'react/react-in-jsx-scope': 'off',
     },
   },
-  {
-    plugins: { prettier },
-    rules: { 'prettier/prettier': ['error', prettierCfg] },
-  },
-];
+  prettier,
+]

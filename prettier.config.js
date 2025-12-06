@@ -1,5 +1,5 @@
 export default {
-  semi: true,
+  semi: false,
   singleQuote: true,
   jsxSingleQuote: false,
   printWidth: 100,
@@ -8,4 +8,4 @@ export default {
   arrowParens: 'avoid',
   endOfLine: 'lf',
   plugins: ['prettier-plugin-tailwindcss'],
-};
+}
