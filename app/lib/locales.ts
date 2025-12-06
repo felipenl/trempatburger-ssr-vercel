@@ -1,5 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import LangDetector from 'i18next-browser-languagedetector';
 import { Locales, LocaleFallBack, LOCALE_STORAGE_KEY, type SupportedLocale } from '@/types/locales';
 import { isBrowser } from './environment';
 
@@ -44,22 +45,25 @@ export async function loadResources(): Promise<
 export async function initI18nSSR(lang?: SupportedLocale) {
   const resources = await loadResources();
 
-  await i18n.use(initReactI18next).init({
-    resources,
-    fallbackLng: LocaleFallBack,
-    supportedLngs: Object.keys(Locales) as SupportedLocale[],
-    ns: ['common'],
-    defaultNS: 'common',
-    load: 'languageOnly',
-    interpolation: { escapeValue: false },
-    react: { useSuspense: false },
-    detection: {
-      order: ['localStorage', 'cookie', 'navigator', 'htmlTag'],
-      caches: ['localStorage', 'cookie'],
-      lookupLocalStorage: LOCALE_STORAGE_KEY,
-    },
-    lng: lang || LocaleFallBack,
-  });
+  await i18n
+    .use(initReactI18next)
+    .use(LangDetector)
+    .init({
+      resources,
+      fallbackLng: LocaleFallBack,
+      supportedLngs: Object.keys(Locales) as SupportedLocale[],
+      ns: ['common'],
+      defaultNS: 'common',
+      load: 'languageOnly',
+      interpolation: { escapeValue: false },
+      react: { useSuspense: false },
+      detection: {
+        order: ['localStorage', 'cookie', 'navigator', 'htmlTag'],
+        caches: ['localStorage', 'cookie'],
+        lookupLocalStorage: LOCALE_STORAGE_KEY,
+      },
+      lng: lang || LocaleFallBack,
+    });
 
   if (isBrowser) {
     i18n.on('languageChanged', lng => setDocumentLanguage(lng));
