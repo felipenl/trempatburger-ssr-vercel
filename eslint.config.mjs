@@ -8,7 +8,20 @@ import globals from 'globals'
 
 export default [
   {
-    ignores: ['dist', 'node_modules', '.react-router', '.wrangler', 'build', '**/*.d.ts'],
+    ignores: ['dist', 'node_modules', '.react-router', 'build', '**/*.d.ts'],
+  },
+  {
+    files: ['**/*.{ts,tsx,js,jsx}'],
+    rules: {
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
+        },
+      ],
+    },
   },
   ...ts.configs.recommended,
   {
@@ -28,6 +41,14 @@ export default [
       ...(hooks.configs.recommended?.rules ?? {}),
       ...(a11y.configs.recommended?.rules ?? {}),
       'react/react-in-jsx-scope': 'off',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
+        },
+      ],
     },
   },
   prettier,

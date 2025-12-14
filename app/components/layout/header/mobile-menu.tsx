@@ -1,22 +1,22 @@
-import useLayout from '@hooks/useLayout';
-import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
-import { paths } from '@/routes';
-import { Drawer, DrawerContent, DrawerClose, DrawerTrigger } from '@components/ui/drawer';
-import OrderButton from '@components/order-button';
-import ModeToggle from '@components/mode-toggle';
-import LanguageSwitcher from '@components/language-switcher';
-import { useState } from 'react';
-import { Link } from 'react-router';
-import { IconMap } from './nav';
-import { DialogTitle } from '@radix-ui/react-dialog';
+import useLayout from '@hooks/useLayout'
+import { Button } from '@/components/ui/button'
+import { Menu, X } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
+import { paths } from '@/routes'
+import { Drawer, DrawerContent, DrawerClose, DrawerTrigger } from '@components/ui/drawer'
+import OrderButton from '@components/order-button'
+import ModeToggle from '@/components/theme/mode-toggle'
+import LanguageSwitcher from '@/components/locale/language-switcher'
+import { useState } from 'react'
+import { Link } from 'react-router'
+import { IconMap } from './nav'
+import { DialogTitle } from '@radix-ui/react-dialog'
 
 function MobileMenu() {
-  const { isMobile } = useLayout();
-  const { t } = useTranslation();
+  const { isMobile } = useLayout()
+  const { t } = useTranslation()
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   if (!isMobile)
     return (
@@ -24,7 +24,7 @@ function MobileMenu() {
         <LanguageSwitcher />
         <ModeToggle />
       </>
-    );
+    )
 
   return (
     <div className="mobile-menu">
@@ -53,7 +53,7 @@ function MobileMenu() {
               <OrderButton className="my-4 w-full" />
 
               {paths.map(({ id, path, label, ...props }) => {
-                const Icon = IconMap[id];
+                const Icon = IconMap[id]
                 return (
                   <Link to={path} key={`menu-${label}`} onClick={() => setOpen(false)} {...props}>
                     <div className="flex items-center border-t-2 p-6 py-4 text-lg">
@@ -61,14 +61,14 @@ function MobileMenu() {
                       {t(label)}
                     </div>
                   </Link>
-                );
+                )
               })}
             </div>
           </div>
         </DrawerContent>
       </Drawer>
     </div>
-  );
+  )
 }
 
-export default MobileMenu;
+export default MobileMenu

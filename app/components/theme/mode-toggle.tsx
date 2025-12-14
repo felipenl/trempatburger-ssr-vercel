@@ -1,36 +1,36 @@
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@components/ui/dropdown-menu';
-import { ThemeVariants, useTheme, type Theme } from '@components/theme-provider';
-import { useTranslation } from 'react-i18next';
-import { Moon, Sun, SunMoon } from 'lucide-react';
-import { cn } from '@lib/utils';
+} from '@components/ui/dropdown-menu'
+import { ThemeVariants, useTheme, type Theme } from '@/components/theme/theme-provider'
+import { useTranslation } from 'react-i18next'
+import { Moon, Sun, SunMoon } from 'lucide-react'
+import { cn } from '@lib/utils'
 
 const getIcon = (variant: Theme, className?: string) => {
-  let Icon = null;
+  let Icon = null
 
   switch (variant) {
     case 'light':
-      Icon = Sun;
-      break;
+      Icon = Sun
+      break
     case 'dark':
-      Icon = Moon;
-      break;
+      Icon = Moon
+      break
     case 'system':
-      Icon = SunMoon;
-      break;
+      Icon = SunMoon
+      break
   }
 
-  return <Icon className={cn('icon', className)} />;
-};
+  return <Icon className={cn('icon', className)} />
+}
 
 export default function ModeToggle() {
-  const { setTheme, theme } = useTheme();
-  const { t } = useTranslation();
+  const { setTheme, theme } = useTheme()
+  const { t } = useTranslation()
 
   return (
     <DropdownMenu modal={false}>
@@ -49,5 +49,5 @@ export default function ModeToggle() {
         ))}
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

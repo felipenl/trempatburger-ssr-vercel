@@ -1,29 +1,29 @@
-import { Button } from '@components/ui/button';
-import { Locales } from '@/types/locales';
+import { Button } from '@components/ui/button'
+import { Locales } from '@/types/locales'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@components/ui/dropdown-menu';
-import React, { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { LocaleFallBack } from '@/types/locales';
-import { Globe } from 'lucide-react';
-import LazyImg from '@components/lazy/lazy-image';
+} from '@components/ui/dropdown-menu'
+import React, { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import { LocaleFallBack } from '@/types/locales'
+import { Globe } from 'lucide-react'
+import LazyImg from '@components/lazy/lazy-image'
 
 export default function LanguageSwitcher() {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation()
 
   const handleLanguageChange = (e: React.MouseEvent) => {
-    const code = e.currentTarget.getAttribute('data-value');
-    if (!code) return;
-    i18n.changeLanguage(code);
-  };
+    const code = e.currentTarget.getAttribute('data-value')
+    if (!code) return
+    i18n.changeLanguage(code)
+  }
 
   useEffect(() => {
-    document.documentElement.lang = i18n.resolvedLanguage || LocaleFallBack;
-  }, [i18n.resolvedLanguage]);
+    document.documentElement.lang = i18n.resolvedLanguage || LocaleFallBack
+  }, [i18n.resolvedLanguage])
 
   return (
     <DropdownMenu modal={false}>
@@ -36,7 +36,7 @@ export default function LanguageSwitcher() {
 
       <DropdownMenuContent>
         {Object.values(Locales).map(l => {
-          const active = i18n.resolvedLanguage === l.code;
+          const active = i18n.resolvedLanguage === l.code
           return (
             <DropdownMenuItem
               className="menu-item"
@@ -54,9 +54,9 @@ export default function LanguageSwitcher() {
               />
               {l.name}
             </DropdownMenuItem>
-          );
+          )
         })}
       </DropdownMenuContent>
     </DropdownMenu>
-  );
+  )
 }

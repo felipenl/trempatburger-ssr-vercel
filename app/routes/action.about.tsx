@@ -1,4 +1,4 @@
-import type { Mail } from '@/types/workers'
+import type { Mail } from '@/types/api'
 import type { ActionFunctionArgs } from 'react-router'
 
 export async function action({ request }: ActionFunctionArgs) {
@@ -8,7 +8,7 @@ export async function action({ request }: ActionFunctionArgs) {
     name: String(formData.get('name') ?? ''),
     email: String(formData.get('email') ?? ''),
     subject: String(formData.get('subject') ?? ''),
-    message: String(formData.get('message') ?? '')
+    message: String(formData.get('message') ?? ''),
   }
 
   const MAIL_API_URL = process.env.MAIL_API_URL
@@ -37,16 +37,16 @@ export async function action({ request }: ActionFunctionArgs) {
       <p><strong>Email:</strong> ${safe(mail.email)}</p>
       <p><strong>Asunto:</strong> ${safe(mail.subject)}</p>
       <p>${safe(mail.message).replace(/\n/g, '<br/>')}</p>
-    `
+    `,
   }
 
   const res = await fetch(MAIL_API_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `Bearer ${MAIL_API_KEY}`
+      Authorization: `Bearer ${MAIL_API_KEY}`,
     },
-    body: JSON.stringify(payload)
+    body: JSON.stringify(payload),
   })
 
   if (!res.ok) {

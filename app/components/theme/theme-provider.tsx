@@ -26,18 +26,18 @@ type ThemeProviderProps = {
 
 type ThemeProviderState = {
   theme: Theme
-  setTheme: (theme: Theme) => void
+  setTheme: (_theme: Theme) => void
 }
 
 export const ThemeIcon = {
   light: 'sun',
   dark: 'moon',
-  system: 'sun-moon'
+  system: 'sun-moon',
 }
 
 const initialState: ThemeProviderState = {
   theme: 'system',
-  setTheme: () => null
+  setTheme: () => null,
 }
 
 const ThemeProviderContext = createContext<ThemeProviderState>(initialState)
@@ -74,7 +74,7 @@ export function ThemeProvider({
     setTheme: (theme: Theme) => {
       saveToStorage(storageKey, theme)
       setTheme(theme)
-    }
+    },
   }
 
   return (
