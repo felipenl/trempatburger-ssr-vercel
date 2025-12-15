@@ -1,20 +1,9 @@
 import { getFromStorage, saveToStorage } from '@lib/environment'
 import React, { createContext, useContext, useEffect, useState } from 'react'
 
-export const ThemeVariants = ['light', 'dark', 'system'] as const
+export const LOCAL_STORAGE_THEME_KEY = 'ui:theme'
 
-export const darkModeScript = `
-    (function() {
-      try {
-        const theme = localStorage.getItem('ui:theme');
-        if (theme === 'dark' || ((!theme || theme === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.classList.add('dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-        }
-      } catch (e) {}
-    })();
-  `
+export const ThemeVariants = ['light', 'dark', 'system'] as const
 
 export type Theme = (typeof ThemeVariants)[number]
 
@@ -26,7 +15,7 @@ type ThemeProviderProps = {
 
 type ThemeProviderState = {
   theme: Theme
-  setTheme: (_theme: Theme) => void
+  setTheme: (theme: Theme) => void
 }
 
 export const ThemeIcon = {
@@ -45,7 +34,7 @@ const ThemeProviderContext = createContext<ThemeProviderState>(initialState)
 export function ThemeProvider({
   children,
   defaultTheme = 'system',
-  storageKey = 'ui:theme',
+  storageKey = LOCAL_STORAGE_THEME_KEY,
   ...props
 }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(

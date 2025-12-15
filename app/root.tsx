@@ -9,7 +9,7 @@ import {
 import type { ReactNode } from 'react'
 import type { ServerContext } from '@/types/server'
 import ErrorBoundary from '@routes/error'
-import { darkModeScript, ThemeProvider } from '@/components/theme/theme-provider'
+import { ThemeProvider } from '@/components/theme/theme-provider'
 import LocaleProvider from '@components/locale/locale-provider'
 import buildServerContext from './components/server/server-context'
 import { meta, links } from './meta'
@@ -25,7 +25,7 @@ export function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang={data?.lang} className={data.theme} suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: darkModeScript }} />
+        <script src="/scripts/dark-mode.js" />
         <Links />
       </head>
       <body>
