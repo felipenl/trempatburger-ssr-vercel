@@ -13,25 +13,25 @@ Server-side rendered React application using React Router and the Vercel adapter
 ## Prerequisites
 
 - Node.js (recommended: 18+)
-- npm (this project uses npm scripts)
+- pnpm (this project uses pnpm scripts)
 
 ## Install
 
 Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## Available scripts
 
-- `npm run dev` start the development server with HMR
-- `npm run build` create a production build
-- `npm run start` serve the built server (`react-router-serve`)
-- `npm run typecheck` run `react-router` typegen + `tsc`
-- `npm run lint` run ESLint
-- `npm run lint:fix` run ESLint and auto-fix
-- `npm run format` run Prettier formatting
+- `pnpm run dev` start the development server with HMR
+- `pnpm run build` create a production build
+- `pnpm run start` serve the built server (`react-router-serve`)
+- `pnpm run typecheck` run `react-router` typegen + `tsc`
+- `pnpm run lint` run ESLint
+- `pnpm run lint:fix` run ESLint and auto-fix
+- `pnpm run format` run Prettier formatting
 
 Use these during development and CI to validate code quality and types.
 
@@ -40,7 +40,7 @@ Use these during development and CI to validate code quality and types.
 Start the dev server:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 The dev server exposes the app locally (default port depends on the dev server; common ports are `5173` or as printed by the CLI).
@@ -50,13 +50,13 @@ The dev server exposes the app locally (default port depends on the dev server; 
 Create an optimized production build:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 Serve the built server:
 
 ```bash
-npm run start
+pnpm run start
 ```
 
 The build output structure typically contains a `client/` folder for static assets and a `server/` entrypoint.
@@ -65,7 +65,7 @@ The build output structure typically contains a `client/` folder for static asse
 
 Vercel
 
-- This project is prepared for Vercel (uses `@vercel/react-router` and `@vercel/analytics`). To deploy, connect the repository in the Vercel dashboard and use the default build command (`npm run build`). Vercel will pick up the server adapter and handle SSR automatically.
+- This project is prepared for Vercel (uses `@vercel/react-router` and `@vercel/analytics`). To deploy, connect the repository in the Vercel dashboard and use the default build command (`pnpm run build`). Vercel will pick up the server adapter and handle SSR automatically.
 
 Docker
 
