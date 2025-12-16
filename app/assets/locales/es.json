@@ -201,17 +201,25 @@
       }
     },
     "postres": {
-      "cookiedevainillaixocolatablanca": {
-        "name": "Cookie de Vainilla y Chocolate Blanco",
-        "description": "Deliciosa galleta de vainilla y chocolate blanco con praliné de pistachos, palomitas dulces y nube de azúcar"
+      "cheesecake": {
+        "name": "Cheesecake de queso de cabra y lotus",
+        "description": "Cheesecake cremosa de triple queso de mascarpone, cabra y queso crema, con una base galleta lotus y su crema por encima"
       },
-      "newyorkrolldenutella": {
-        "name": "NEW YORK ROLL DE NUTELLA",
-        "description": "Deliciosa masa de croissant rellena de Nutella, cubierta de chocolate y perlas tricolor"
+      "bunyolsxoco": {
+        "name": "BUÑUELOS DE CHOCO CHILLI",
+        "description": "Deliciosos buñuelos caseros de chocolate con chilli. Pican ligeramente y explotan en la boca. Aconsejamos comer de un solo bocado. Vienen 3 unidades. Puede contener trazas de frutos secos y soja porque el chocolate que usamos se elabora en una fabrica donde hay presencia de estos alérgenos."
       },
-      "cheesecakedeformatgedecabrailotus": {
-        "name": "Cheesecake de Queso de Cabra y Lotus",
-        "description": "Base de galleta Lotus y cheesecake fundente de triple queso de cabra, mascarpone y nata, con un delicioso topping de crema Lotus"
+      "cookienutella": {
+        "name": "COOKIE DE NUTELLA",
+        "description": "Espectacular cookie de 125gr hecha en casa, super rellena de nutella. Si te gusta la nutella, este es tu postre. Puede contener trazas de soja y frutos secos porque el chocolate que usamos se elabora en una fabrica donde hay presencia de estos alérgenos."
+      },
+      "cheescakesingluten": {
+        "name": "CHEESECAKE DE CABRA SIN GLUTEN",
+        "description": "Por fin disponible nuestra Cheesecake triple queso con cabra, mascarpone y queso crema SIN GLUTEN. SIEMPRE DISPONIBLE"
+      },
+      "fondantxoco": {
+        "name": "FONDANT DE CHOCOLATE Y PRALINÉ",
+        "description": "Pastel casero de chocolate negro y praliné de avellanas y almendras. Recomendamos ponerlo en el microondas 20 segundos a máxima potencia y obtener así un estilo coulant ligeramente caliente. Puede contener trazas de gluten (el chocolate que usamos se elabora en una fabrica que hay gluten)"
       }
     },
     "salses": {

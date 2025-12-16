@@ -201,17 +201,25 @@
       }
     },
     "postres": {
-      "cookiedevainillaixocolatablanca": {
-        "name": "Cookie de Vainilla i Xocolata Blanca",
-        "description": "Deliciosa galeta de vainilla i xocolata blanca amb praliné de festucs, crispetes dolces i núvol de sucre"
+      "cheesecake": {
+        "name": "Cheesecake de formatge de cabra i lotus",
+        "description": "Cheesecake cremós de triple formatge: mascarpone, cabra i formatge crema, amb una base de galeta lotus i la seva crema per sobre"
       },
-      "newyorkrolldenutella": {
-        "name": "NEW YORK ROLL DE NUTELLA",
-        "description": "Deliciosa massa de croissant farcida de Nutella, coberta de xocolata i perles tricolor"
+      "bunyolsxoco": {
+        "name": "BUNYOLS DE XOCOLATA I XILI",
+        "description": "Deliciosos bunyols casolans de xocolata amb xili. Piquen lleugerament i esclaten a la boca. Recomanem menjar-los d’un sol mos. Inclou 3 unitats. Pot contenir traces de fruits secs i soja, ja que la xocolata que utilitzem s’elabora en una fàbrica on hi ha presència d’aquests al·lèrgens."
       },
-      "cheesecakedeformatgedecabrailotus": {
-        "name": "Cheesecake de Formatge de Cabra i Lotus",
-        "description": "Base de galeta Lotus i cheesecake de triple formatge de cabra, mascarpone i nata, amb un deliciós topping de crema Lotus"
+      "cookienutella": {
+        "name": "COOKIE DE NUTELLA",
+        "description": "Espectacular cookie casolana de 125 g, super farcida de Nutella. Si t’agrada la Nutella, aquest és el teu postre. Pot contenir traces de soja i fruits secs, ja que la xocolata que utilitzem s’elabora en una fàbrica on hi ha presència d’aquests al·lèrgens."
+      },
+      "cheescakesingluten": {
+        "name": "CHEESECAKE DE CABRA SENSE GLUTEN",
+        "description": "Per fi disponible la nostra cheesecake de triple formatge amb cabra, mascarpone i formatge crema SENSE GLUTEN. SEMPRE DISPONIBLE"
+      },
+      "fondantxoco": {
+        "name": "FONDANT DE XOCOLATA I PRALINÉ",
+        "description": "Pastís casolà de xocolata negra amb praliné d’avellanes i ametlles. Recomanem escalfar-lo al microones 20 segons a màxima potència per obtenir un efecte coulant lleugerament calent. Pot contenir traces de gluten (la xocolata que utilitzem s’elabora en una fàbrica on hi ha gluten)."
       }
     },
     "salses": {

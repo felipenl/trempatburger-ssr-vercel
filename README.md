@@ -1,100 +1,97 @@
-# Welcome to React Router!
+﻿# Trempat Burger SSR React Router (Vercel)
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Server-side rendered React application using React Router and the Vercel adapter. This repo contains the app source under `app/`, reusable UI in `components/`, and static assets in `public/`.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+**Highlights**
 
-## Features
+- Server-side rendering (SSR) with `@react-router/node` and `@vercel/react-router`
+- TypeScript-first codebase
+- Tailwind CSS for styling
+- i18n support with `i18next` + language detector
+- Vercel analytics integration
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## Prerequisites
 
-## Getting Started
+- Node.js (recommended: 18+)
+- npm (this project uses npm scripts)
 
-### Installation
+## Install
 
-Install the dependencies:
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-### Development
+## Available scripts
 
-Start the development server with HMR:
+- `npm run dev` start the development server with HMR
+- `npm run build` create a production build
+- `npm run start` serve the built server (`react-router-serve`)
+- `npm run typecheck` run `react-router` typegen + `tsc`
+- `npm run lint` run ESLint
+- `npm run lint:fix` run ESLint and auto-fix
+- `npm run format` run Prettier formatting
+
+Use these during development and CI to validate code quality and types.
+
+## Development
+
+Start the dev server:
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+The dev server exposes the app locally (default port depends on the dev server; common ports are `5173` or as printed by the CLI).
 
-## Building for Production
+## Build & Run (Production)
 
-Create a production build:
+Create an optimized production build:
 
 ```bash
 npm run build
 ```
 
-## Deployment
-
-### Docker Deployment
-
-This template includes three Dockerfiles optimized for different package managers:
-
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
-
-To build and run using Docker:
+Serve the built server:
 
 ```bash
-# For npm
-docker build -t my-app .
-
-# For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
-
-# For bun
-docker build -f Dockerfile.bun -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+npm run start
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
+The build output structure typically contains a `client/` folder for static assets and a `server/` entrypoint.
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+## Deployment
 
-### DIY Deployment
+Vercel
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
+- This project is prepared for Vercel (uses `@vercel/react-router` and `@vercel/analytics`). To deploy, connect the repository in the Vercel dashboard and use the default build command (`npm run build`). Vercel will pick up the server adapter and handle SSR automatically.
 
-Make sure to deploy the output of `npm run build`
+Docker
 
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+- A `Dockerfile` is included for containerized deployments. Build and run with:
+
+```bash
+docker build -t trempatburger-ssr .
+docker run -p 3000:3000 trempatburger-ssr
 ```
 
-## Styling
+Other platforms that accept Node containers (Cloud Run, ECS, Fly, Railway) can also be used.
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+## Project Layout
 
----
+- `app/` application routes, entry points, assets and top-level UI
+- `components/` reusable components and UI primitives
+- `public/` static files served as-is (fonts, images)
+- `styles/` global CSS and Tailwind configuration
+- `scripts/` small helper scripts (e.g. `dark-mode.js`)
 
-Built with ❤️ using React Router.
+## Notes
+
+- Internationalization files are under `app/assets/locales/` and `public/images/locales/`.
+- Tailwind configuration is in `tailwind.config.ts` and integrated via Vite.
+
+## References
+
+- React Router docs: https://reactrouter.com/
+- Vercel deployment docs: https://vercel.com/docs
