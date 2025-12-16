@@ -201,17 +201,25 @@
       }
     },
     "postres": {
-      "cookiedevainillaixocolatablanca": {
-        "name": "Vanilla & White Chocolate Cookie",
-        "description": "Delicious vanilla and white chocolate cookie with pistachio praline, sweet popcorn and marshmallow"
+      "cheesecake": {
+        "name": "Goat Cheese and Lotus Cheesecake",
+        "description": "Creamy triple-cheese cheesecake made with mascarpone, goat cheese and cream cheese, on a Lotus biscuit base topped with Lotus spread"
       },
-      "newyorkrolldenutella": {
-        "name": "NUTELLA NEW YORK ROLL",
-        "description": "Delicious croissant dough filled with Nutella, topped with chocolate and tricolor pearls"
+      "bunyolsxoco": {
+        "name": "CHOCOLATE & CHILLI FRITTERS",
+        "description": "Delicious homemade chocolate fritters with chilli. Lightly spicy and bursting in your mouth. We recommend eating them in one bite. Served in 3 pieces. May contain traces of nuts and soy, as the chocolate we use is produced in a facility that handles these allergens."
       },
-      "cheesecakedeformatgedecabrailotus": {
-        "name": "Goat Cheese & Lotus Cheesecake",
-        "description": "Lotus biscuit base and triple goat cheese, mascarpone and cream cheesecake, topped with Lotus spread"
+      "cookienutella": {
+        "name": "NUTELLA COOKIE",
+        "description": "Spectacular homemade 125 g cookie, generously filled with Nutella. If you love Nutella, this is your dessert. May contain traces of soy and nuts, as the chocolate we use is produced in a facility that handles these allergens."
+      },
+      "cheescakesingluten": {
+        "name": "GLUTEN-FREE GOAT CHEESE CHEESECAKE",
+        "description": "Our triple-cheese cheesecake made with goat cheese, mascarpone and cream cheese, now GLUTEN-FREE. ALWAYS AVAILABLE."
+      },
+      "fondantxoco": {
+        "name": "CHOCOLATE & PRALINE FONDANT",
+        "description": "Homemade dark chocolate cake with hazelnut and almond praline. We recommend heating it in the microwave for 20 seconds at full power to achieve a slightly warm, molten center. May contain traces of gluten (the chocolate we use is produced in a facility that handles gluten)."
       }
     },
     "salses": {

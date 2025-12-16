@@ -123,22 +123,34 @@
     "icon": "cake",
     "items": [
       {
-        "id": "cookiedevainillaixocolatablanca",
-        "key": "menu.postres.cookiedevainillaixocolatablanca",
-        "image": "cookie-vainilla.jpg",
-        "descriptionKey": "menu.postres.cookiedevainillaixocolatablanca.description"
-      },
-      {
-        "id": "newyorkrolldenutella",
-        "key": "menu.postres.newyorkrolldenutella",
-        "image": "nyroll.jpg",
-        "descriptionKey": "menu.postres.newyorkrolldenutella.description"
-      },
-      {
-        "id": "cheesecakedeformatgedecabrailotus",
-        "key": "menu.postres.cheesecakedeformatgedecabrailotus",
+        "id": "cheesecake",
+        "key": "menu.postres.cheesecake",
         "image": "cheescake-lotus.jpg",
-        "descriptionKey": "menu.postres.cheesecakedeformatgedecabrailotus.description"
+        "descriptionKey": "menu.postres.cheesecake.description"
+      },
+      {
+        "id": "bunyolsxoco",
+        "key": "menu.postres.bunyolsxoco",
+        "image": "bunyols-xoco.webp",
+        "descriptionKey": "menu.postres.bunyolsxoco.description"
+      },
+      {
+        "id": "cookienutella",
+        "key": "menu.postres.cookienutella",
+        "image": "cookie-nutella.jpg",
+        "descriptionKey": "menu.postres.cookienutella.description"
+      },
+      {
+        "id": "cheescakesingluten",
+        "key": "menu.postres.cheescakesingluten",
+        "image": "cheescake-singluten.webp",
+        "descriptionKey": "menu.postres.cheescakesingluten.description"
+      },
+      {
+        "id": "fondantxoco",
+        "key": "menu.postres.fondantxoco",
+        "image": "fondant-xoco.webp",
+        "descriptionKey": "menu.postres.fondantxoco.description"
       }
     ]
   },
