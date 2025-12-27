@@ -10,19 +10,6 @@ export default [
   {
     ignores: ['dist', 'node_modules', '.react-router', 'build', '**/*.d.ts'],
   },
-  {
-    files: ['**/*.{ts,tsx,js,jsx}'],
-    rules: {
-      '@typescript-eslint/no-unused-vars': [
-        'error',
-        {
-          argsIgnorePattern: '^_',
-          varsIgnorePattern: '^_',
-          caughtErrorsIgnorePattern: '^_',
-        },
-      ],
-    },
-  },
   ...ts.configs.recommended,
   {
     ...js.configs.recommended,
@@ -33,7 +20,7 @@ export default [
     },
   },
   {
-    files: ['**/*.tsx'],
+    files: ['**/*.{ts,tsx}'],
     plugins: { react, 'react-hooks': hooks, 'jsx-a11y': a11y },
     settings: { react: { version: 'detect' } },
     rules: {
@@ -41,6 +28,7 @@ export default [
       ...(hooks.configs.recommended?.rules ?? {}),
       ...(a11y.configs.recommended?.rules ?? {}),
       'react/react-in-jsx-scope': 'off',
+      'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [
         'error',
         {

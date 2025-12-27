@@ -17,20 +17,35 @@ export const links: Route.LinksFunction = () => [
   { rel: 'stylesheet', href: stylesheet },
 ]
 
-export const meta: MetaFunction = () => {
+export const meta: MetaFunction = ({ location }) => {
   const image = `${info.url}/images/mano.svg`
+  const currentUrl = `${info.url}${location.pathname}`
 
   return [
-    { name: 'title', content: info.title },
+    { title: info.title },
     { name: 'description', content: info.description },
+    {
+      name: 'keywords',
+      content:
+        'hamburgueseria, burger, Cardedeu, Barcelona, menjar ràpid, comida rápida, hamburguesas artesanas, ingredients locals, trempat',
+    },
+    { name: 'author', content: 'Trempat Burger' },
+    { name: 'robots', content: 'index, follow' },
+
+    // Canonical URL
+    { tagName: 'link', rel: 'canonical', href: currentUrl },
 
     // Open Graph (para Facebook, WhatsApp, etc.)
     { property: 'og:type', content: 'restaurant' },
     { property: 'og:title', content: info.title },
     { property: 'og:description', content: info.description },
-    { property: 'og:url', content: info.url },
+    { property: 'og:url', content: currentUrl },
     { property: 'og:image', content: image },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' },
     { property: 'og:locale', content: 'ca_ES' },
+    { property: 'og:locale:alternate', content: 'es_ES' },
+    { property: 'og:locale:alternate', content: 'en_US' },
     { property: 'og:site_name', content: 'Trempat Burger' },
 
     // Twitter Cards
@@ -39,8 +54,13 @@ export const meta: MetaFunction = () => {
     { name: 'twitter:description', content: info.description },
     { name: 'twitter:image', content: image },
 
-    // Favicon
-    { rel: 'icon', href: '/favicon.svg' },
+    // Favicons (multiple formats for better compatibility)
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
+    { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon/favicon-32x32.png' },
+    { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon/favicon-16x16.png' },
+    { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+    { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon/apple-touch-icon.png' },
+    { rel: 'manifest', href: '/favicon/site.webmanifest' },
 
     { name: 'color-scheme', content: 'dark light' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },

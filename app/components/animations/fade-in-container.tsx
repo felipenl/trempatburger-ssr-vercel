@@ -1,6 +1,5 @@
-import type { FadeInContainerProps } from '@/types/animations';
-import { motion } from 'framer-motion';
-import type React from 'react';
+import type { FadeInContainerProps } from '@/types/animations'
+import { motion } from 'framer-motion'
 
 export default function FadeInContainer({ children, delay = 0.2 }: FadeInContainerProps) {
   return (
@@ -15,5 +14,5 @@ export default function FadeInContainer({ children, delay = 0.2 }: FadeInContain
     >
       {children}
     </motion.div>
-  );
+  )
 }
