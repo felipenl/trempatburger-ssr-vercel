@@ -20,7 +20,7 @@ export default [
     },
   },
   {
-    files: ['**/*.tsx'],
+    files: ['**/*.{ts,tsx}'],
     plugins: { react, 'react-hooks': hooks, 'jsx-a11y': a11y },
     settings: { react: { version: 'detect' } },
     rules: {
@@ -28,6 +28,7 @@ export default [
       ...(hooks.configs.recommended?.rules ?? {}),
       ...(a11y.configs.recommended?.rules ?? {}),
       'react/react-in-jsx-scope': 'off',
+      'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
