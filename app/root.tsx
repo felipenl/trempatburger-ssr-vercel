@@ -27,6 +27,7 @@ export function Layout({ children }: { children: ReactNode }) {
     <html lang={data?.lang} className={data.theme} suppressHydrationWarning>
       <head>
         <title>{info.title}</title>
+        <link rel="icon" href="/favicon.svg" />
         <script src="/scripts/dark-mode.js" />
         <Links />
       </head>
