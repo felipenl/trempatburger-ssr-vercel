@@ -1,0 +1,12 @@
+# robots.txt for Trempat Burger
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api
+Disallow: /*.json$
+
+# Block access to non-existent routes
+Disallow: /home
+
+# Sitemap
+Sitemap: https://trempatburger.com/sitemap.xml

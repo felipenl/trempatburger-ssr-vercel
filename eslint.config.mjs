@@ -10,19 +10,6 @@ export default [
   {
     ignores: ['dist', 'node_modules', '.react-router', 'build', '**/*.d.ts'],
   },
-  {
-    files: ['**/*.{ts,tsx,js,jsx}'],
-    rules: {
-      '@typescript-eslint/no-unused-vars': [
-        'error',
-        {
-          argsIgnorePattern: '^_',
-          varsIgnorePattern: '^_',
-          caughtErrorsIgnorePattern: '^_',
-        },
-      ],
-    },
-  },
   ...ts.configs.recommended,
   {
     ...js.configs.recommended,

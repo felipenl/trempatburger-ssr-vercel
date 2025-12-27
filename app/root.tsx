@@ -14,7 +14,6 @@ import LocaleProvider from '@components/locale/locale-provider'
 import buildServerContext from './components/server/server-context'
 import { meta, links } from './meta'
 import { Analytics } from '@vercel/analytics/react'
-import info from '@assets/contact-info.json'
 
 export async function loader(args: LoaderFunctionArgs) {
   return await buildServerContext(args)
@@ -26,7 +25,6 @@ export function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang={data?.lang} className={data.theme} suppressHydrationWarning>
       <head>
-        <title>{info.title}</title>
         <script src="/scripts/dark-mode.js" />
         <Links />
       </head>
