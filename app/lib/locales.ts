@@ -1,7 +1,13 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import LangDetector from 'i18next-browser-languagedetector'
-import { LocaleFallBack, LOCALE_STORAGE_KEY, type SupportedLocale, Locales } from '@/types/locales'
+import {
+  LocaleFallBack,
+  LOCALE_STORAGE_KEY,
+  type SupportedLocale,
+  Locales,
+  type LocalesResources,
+} from '@/types/locales'
 import { isBrowser } from './environment'
 import { getAllResources } from '@/api/locales'
 
@@ -26,8 +32,8 @@ export function getStoredLocale(): SupportedLocale | null {
   return stored ? sanitize(stored) : null
 }
 
-export async function initI18nSSR(lang?: SupportedLocale) {
-  const resources = await getAllResources()
+export async function initI18nSSR(lang?: SupportedLocale, initialResources?: LocalesResources) {
+  const resources = initialResources || (await getAllResources())
 
   await i18n
     .use(initReactI18next)
@@ -36,8 +42,6 @@ export async function initI18nSSR(lang?: SupportedLocale) {
       resources,
       fallbackLng: LocaleFallBack,
       supportedLngs: Object.keys(resources),
-      ns: ['common'],
-      defaultNS: 'common',
       load: 'languageOnly',
       interpolation: { escapeValue: false },
       react: { useSuspense: false },
@@ -64,9 +68,10 @@ export function detectLanguage(headerLang: string | null): SupportedLocale {
   return Locales[code] ? code : LocaleFallBack
 }
 
-export async function initI18nClient() {
+export async function initI18nClient(resources?: LocalesResources) {
   const stored = getStoredLocale()
-  const i18nInstance = await initI18nSSR(stored || undefined)
+
+  const i18nInstance = await initI18nSSR(stored || undefined, resources)
 
   if (isBrowser) setDocumentLanguage(i18nInstance.language)
 

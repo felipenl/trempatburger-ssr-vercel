@@ -23,7 +23,9 @@ export const meta: MetaFunction = ({ location }) => {
 
   return [
     { title: info.title },
+    { charSet: 'utf-8' },
     { name: 'description', content: info.description },
+
     {
       name: 'keywords',
       content:

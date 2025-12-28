@@ -1,22 +1,26 @@
 import {
   Links,
-  Outlet,
   Scripts,
   ScrollRestoration,
   useLoaderData,
   type LoaderFunctionArgs,
+  data,
 } from 'react-router'
 import type { ReactNode } from 'react'
 import type { ServerContext } from '@/types/server'
 import ErrorBoundary from '@routes/error'
-import { ThemeProvider } from '@/components/theme/theme-provider'
-import LocaleProvider from '@components/locale/locale-provider'
 import buildServerContext from './components/server/server-context'
 import { meta, links } from './meta'
+import App from './app'
 import { Analytics } from '@vercel/analytics/react'
 
 export async function loader(args: LoaderFunctionArgs) {
-  return await buildServerContext(args)
+  const serverContext = await buildServerContext(args)
+  return data(serverContext, {
+    headers: {
+      'Cache-Control': 'public, max-age=300, s-maxage=300, stale-while-revalidate=600',
+    },
+  })
 }
 
 export function Layout({ children }: { children: ReactNode }) {
@@ -25,11 +29,12 @@ export function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang={data?.lang} className={data.theme} suppressHydrationWarning>
       <head>
+        <meta charSet="utf-8" />
         <script src="/scripts/dark-mode.js" />
         <Links />
       </head>
       <body>
-        <Analytics />
+        <Analytics framework="react-router" />
         {children}
         <ScrollRestoration />
         <Scripts />
@@ -38,14 +43,6 @@ export function Layout({ children }: { children: ReactNode }) {
   )
 }
 
-export default function App() {
-  return (
-    <ThemeProvider>
-      <LocaleProvider>
-        <Outlet />
-      </LocaleProvider>
-    </ThemeProvider>
-  )
-}
+export default App
 
 export { ErrorBoundary, meta, links }

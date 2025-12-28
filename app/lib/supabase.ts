@@ -2,20 +2,16 @@ import {
   createClient,
   type PostgrestResponse,
   type PostgrestSingleResponse,
+  type SupabaseClientOptions,
 } from '@supabase/supabase-js'
+import { isBrowser } from './environment'
 
-export const init = () => {
-  const { VITE_SUPABASE_URL: url, VITE_SUPABASE_PUBLISHABLE_API_KEY: apiKey } = import.meta.env
-
-  if (!url) {
-    throw new Error('VITE_SUPABASE_URL is not defined in environment variables.')
-  }
-
-  if (!apiKey) {
-    throw new Error('VITE_SUPABASE_PUBLISHABLE_API_KEY is not defined in environment variables.')
-  }
-
-  return createClient(url, apiKey)
+export function getClient(options?: SupabaseClientOptions<'public'>) {
+  return createClient(
+    import.meta.env.VITE_SUPABASE_URL,
+    import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY,
+    options
+  )
 }
 
 export const handleResponse = async (
@@ -29,4 +25,38 @@ export const handleResponse = async (
   return response.data
 }
 
-export default init()
+const getConfig = () => {
+  if (isBrowser) {
+    return {
+      url: import.meta.env.VITE_SUPABASE_URL,
+      key: import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY,
+    }
+  } else {
+    return {
+      url: process.env.VITE_SUPABASE_URL,
+      key: process.env.SUPABASE_SECRET_KEY,
+      options: {
+        auth: {
+          persistSession: false,
+          autoRefreshToken: false,
+        },
+      },
+    }
+  }
+}
+
+export const initClient = () => {
+  const { url, key, options } = getConfig()
+
+  if (!url) {
+    throw new Error('Supabase URL is not defined')
+  }
+
+  if (!key) {
+    throw new Error('Supabase Key is not defined')
+  }
+
+  return createClient(url!, key!, options)
+}
+
+export default initClient()
