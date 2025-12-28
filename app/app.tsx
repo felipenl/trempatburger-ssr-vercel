@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <ThemeProvider defaultTheme={theme}>
-      <LocaleProvider resources={locales}>
+      <LocaleProvider {...locales}>
         <Outlet />
       </LocaleProvider>
     </ThemeProvider>

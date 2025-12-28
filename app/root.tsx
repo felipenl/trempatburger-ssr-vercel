@@ -4,7 +4,6 @@ import {
   ScrollRestoration,
   useLoaderData,
   type LoaderFunctionArgs,
-  data,
 } from 'react-router'
 import type { ReactNode } from 'react'
 import type { ServerContext } from '@/types/server'
@@ -15,12 +14,7 @@ import App from './app'
 import { Analytics } from '@vercel/analytics/react'
 
 export async function loader(args: LoaderFunctionArgs) {
-  const serverContext = await buildServerContext(args)
-  return data(serverContext, {
-    headers: {
-      'Cache-Control': 'public, max-age=300, s-maxage=300, stale-while-revalidate=600',
-    },
-  })
+  return await buildServerContext(args)
 }
 
 export function Layout({ children }: { children: ReactNode }) {

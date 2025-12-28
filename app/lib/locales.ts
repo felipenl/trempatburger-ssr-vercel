@@ -5,11 +5,11 @@ import {
   LocaleFallBack,
   LOCALE_STORAGE_KEY,
   type SupportedLocale,
-  Locales,
+  type LocalesType,
   type LocalesResources,
+  Locales,
 } from '@/types/locales'
 import { isBrowser } from './environment'
-import { getAllResources } from '@/api/locales'
 
 export function sanitize(code: string): string {
   return code.toLowerCase().split('-')[0] as SupportedLocale
@@ -32,9 +32,11 @@ export function getStoredLocale(): SupportedLocale | null {
   return stored ? sanitize(stored) : null
 }
 
-export async function initI18nSSR(lang?: SupportedLocale, initialResources?: LocalesResources) {
-  const resources = initialResources || (await getAllResources())
+export function setLocales(locales: LocalesType) {
+  Object.assign(Locales, locales)
+}
 
+export async function initI18nSSR(lang: SupportedLocale | null, resources: LocalesResources) {
   await i18n
     .use(initReactI18next)
     .use(LangDetector)
@@ -68,10 +70,8 @@ export function detectLanguage(headerLang: string | null): SupportedLocale {
   return Locales[code] ? code : LocaleFallBack
 }
 
-export async function initI18nClient(resources?: LocalesResources) {
-  const stored = getStoredLocale()
-
-  const i18nInstance = await initI18nSSR(stored || undefined, resources)
+export async function initI18nClient(resources: LocalesResources) {
+  const i18nInstance = await initI18nSSR(getStoredLocale(), resources)
 
   if (isBrowser) setDocumentLanguage(i18nInstance.language)
 

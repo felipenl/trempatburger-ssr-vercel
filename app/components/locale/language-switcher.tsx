@@ -6,7 +6,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@components/ui/dropdown-menu'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { LocaleFallBack } from '@/types/locales'
 import { Globe } from 'lucide-react'
@@ -20,10 +20,6 @@ export default function LanguageSwitcher() {
     if (!code) return
     i18n.changeLanguage(code)
   }
-
-  useEffect(() => {
-    document.documentElement.lang = i18n.resolvedLanguage || LocaleFallBack
-  }, [i18n.resolvedLanguage])
 
   return (
     <DropdownMenu modal={false}>

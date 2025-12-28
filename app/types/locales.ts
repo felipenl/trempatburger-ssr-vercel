@@ -4,6 +4,7 @@ export const Locales = {} as Record<string, Locale>
 
 export const LocaleFallBack = 'ca' as const
 
+export type LocalesType = typeof Locales
 export type SupportedLocale = keyof typeof Locales
 
 export type Messages = { [key: string]: string | Messages }
@@ -26,5 +27,6 @@ export type Translation = {
 
 export type LocaleWithTranslations = {
   code: string
+  name: string
   translations: Translation[]
 }

@@ -1,12 +1,16 @@
 import { setDeep } from '@/lib/parsers'
 import supabase, { handleResponse } from '@lib/supabase'
-import type { Locale, LocaleWithTranslations, Translation } from '@/types/locales'
-import type { Resource } from 'i18next'
+import {
+  type LocalesResources,
+  type LocalesType,
+  type LocaleWithTranslations,
+  type Translation,
+} from '@/types/locales'
 
 export const getLocales = async () => {
   const locales = await supabase.from('locales').select('*').then(handleResponse)
 
-  return locales as Locale[]
+  return locales as LocalesType[]
 }
 
 export const getTranslations = async (locale: string) => {
@@ -30,14 +34,21 @@ export const getAllResources = async () => {
     .from('locales')
     .select(
       `code,
+      name,
       translations (key, value)
       `
     )
     .then(handleResponse)) as LocaleWithTranslations[]
 
-  const resources: Record<string, Resource> = {}
+  const resources: LocalesResources = {}
+  const locales: LocalesType = {}
 
-  if (!data) return resources
+  if (!data) {
+    return {
+      resources,
+      locales,
+    }
+  }
 
   for (const locale of data) {
     const translationsMap = {}
@@ -48,10 +59,16 @@ export const getAllResources = async () => {
       })
     }
 
+    locales[locale.code] = {
+      id: locale.code,
+      code: locale.code,
+      name: locale.name,
+    }
+
     resources[locale.code] = {
       translation: translationsMap,
     }
   }
 
-  return resources
+  return { resources, locales }
 }

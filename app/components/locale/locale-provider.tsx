@@ -1,21 +1,28 @@
-import { initI18nClient } from '@lib/locales'
-import type { i18n, Resource } from 'i18next'
+'use client'
+
+import { initI18nClient, setLocales } from '@lib/locales'
+import type { i18n } from 'i18next'
 import React, { useEffect, useState } from 'react'
 import { I18nextProvider } from 'react-i18next'
 import TrempatSpinner from '../trempat-spinner'
-import { type SupportedLocale } from '@/types/locales'
+import { type LocalesResources, type LocalesType } from '@/types/locales'
 
 type LocaleProviderProps = {
   children: React.ReactNode
-  resources: Record<SupportedLocale, Resource>
+  locales: LocalesType
+  resources: LocalesResources
 }
 
-export default function LocaleProvider({ children, resources }: LocaleProviderProps) {
+export default function LocaleProvider({ children, resources, locales }: LocaleProviderProps) {
   const [i18nInstance, setI18nInstance] = useState<i18n | null>(null)
 
   useEffect(() => {
     initI18nClient(resources).then(setI18nInstance)
   }, [resources])
+
+  useEffect(() => {
+    setLocales(locales)
+  }, [locales])
 
   if (!i18nInstance) return <TrempatSpinner />
 
