@@ -1,5 +1,3 @@
-'use client'
-
 import { logPageView } from '@lib/analytics'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router'

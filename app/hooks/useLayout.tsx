@@ -1,5 +1,3 @@
-'use client'
-
 import { isBrowser, isServer } from '@lib/environment'
 import React from 'react'
 import useEventListener from './useEventListener'
@@ -13,14 +11,14 @@ type Layout = {
   isDesktop: boolean
 }
 
-const computeLayout = (window: globalThis.Window) => {
+const computeLayout = () => {
   if (!isBrowser) {
     return {
-      width: 0,
-      height: 0,
+      width: 1024,
+      height: 768,
       isMobile: false,
       isTablet: false,
-      isDesktop: false,
+      isDesktop: true,
     }
   }
 
@@ -40,11 +38,11 @@ const computeLayout = (window: globalThis.Window) => {
 }
 
 function useLayout() {
-  const [layout, setLayout] = React.useState<Layout>(computeLayout(globalThis.window))
+  const [layout, setLayout] = React.useState<Layout>(computeLayout)
 
   const resize = debounce(() => {
     if (isServer) return
-    setLayout(computeLayout(globalThis.window))
+    setLayout(computeLayout())
   }, 200)
 
   useEventListener('resize', resize)
