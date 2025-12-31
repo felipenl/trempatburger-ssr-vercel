@@ -21,8 +21,10 @@ export const logEvent = ({ category, action, label, value }: GAEvent): void => {
   })
 }
 
+let isInitialized = false
+
 export default function init(): void {
-  if (!isBrowser) return
+  if (!isBrowser || isInitialized) return
 
   const trackingId = import.meta.env.VITE_GA_ID
 
@@ -41,5 +43,5 @@ export default function init(): void {
     },
   ])
 
-  console.log(ReactGA)
+  isInitialized = true
 }
