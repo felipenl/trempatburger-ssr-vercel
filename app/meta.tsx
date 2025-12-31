@@ -63,11 +63,10 @@ export const meta: MetaFunction = ({ location }) => {
     { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon/apple-touch-icon.png' },
     { rel: 'manifest', href: '/favicon/site.webmanifest' },
     // Shortcut icon for Google and other search engines
+
     { rel: 'shortcut icon', href: '/favicon.ico' },
 
     { name: 'color-scheme', content: 'dark light' },
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { charSet: 'utf-8' },
 
     // Schema.org LocalBusiness
     {
