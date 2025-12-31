@@ -10,7 +10,6 @@
     "rootDirs": [".", "./.react-router/types"],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./app/*"],
       "@assets/*": ["./app/assets/*"],
       "@components/*": ["./app/components/*"],
       "@ui/*": ["./app/components/ui/*"],
@@ -21,7 +20,7 @@
       "@utils/*": ["./app/utils/*"],
       "@lib/*": ["./app/lib/*"],
       "@errors/*": ["./app/errors/*"],
-      "@workers/*": ["workers/*"]
+      "@/*": ["./app/*"]
     },
     "allowImportingTsExtensions": true,
     "esModuleInterop": true,
