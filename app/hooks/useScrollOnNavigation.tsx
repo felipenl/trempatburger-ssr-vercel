@@ -1,13 +1,15 @@
-import { isBrowser } from '@lib/environment';
-import { useLayoutEffect } from 'react';
-import { useLocation } from 'react-router';
+'use client'
+
+import { isBrowser } from '@lib/environment'
+import { useLayoutEffect } from 'react'
+import { useLocation } from 'react-router'
 
 export function useInstantScrollOnNavigate() {
-  const { pathname } = useLocation();
+  const { pathname } = useLocation()
 
   useLayoutEffect(() => {
-    if (!isBrowser) return;
+    if (!isBrowser) return
 
-    window.scroll({ top: 0, left: 0, behavior: 'instant' });
-  }, [pathname]);
+    window.scroll({ top: 0, left: 0, behavior: 'instant' })
+  }, [pathname])
 }
