@@ -23,7 +23,9 @@ export const meta: MetaFunction = ({ location }) => {
 
   return [
     { title: info.title },
+    { charSet: 'utf-8' },
     { name: 'description', content: info.description },
+
     {
       name: 'keywords',
       content:
@@ -55,12 +57,13 @@ export const meta: MetaFunction = ({ location }) => {
     { name: 'twitter:image', content: image },
 
     // Favicons (multiple formats for better compatibility)
-    { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon/favicon-32x32.png' },
     { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon/favicon-16x16.png' },
-    { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
     { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon/apple-touch-icon.png' },
     { rel: 'manifest', href: '/favicon/site.webmanifest' },
+    // Shortcut icon for Google and other search engines
+    { rel: 'shortcut icon', href: '/favicon.ico' },
 
     { name: 'color-scheme', content: 'dark light' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
