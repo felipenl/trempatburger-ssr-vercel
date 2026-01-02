@@ -3,6 +3,7 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
+  Meta,
   type LoaderFunctionArgs,
 } from 'react-router'
 import type { ReactNode } from 'react'
@@ -23,11 +24,8 @@ export function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang={data?.lang} className={data.theme} suppressHydrationWarning>
       <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="shortcut icon" href="/favicon.ico" />
         <script src="/scripts/dark-mode.js" />
+        <Meta />
         <Links />
       </head>
       <body>

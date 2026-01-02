@@ -1,11 +1,18 @@
-import { useTranslation } from 'react-i18next';
-import Trempat from '@assets/logos/trempat_doble.svg?react';
-import Steps from '@components/home/steps';
-import OpenMenu from '@components/home/open-menu';
-import LazyImg from '@components/lazy/lazy-image';
+import type { MetaFunction } from 'react-router'
+import { useTranslation } from 'react-i18next'
+import Trempat from '@assets/logos/trempat_doble.svg?react'
+import Steps from '@components/home/steps'
+import OpenMenu from '@components/home/open-menu'
+import LazyImg from '@components/lazy/lazy-image'
+import info from '@assets/contact-info.json'
+
+export const meta: MetaFunction = () => [
+  { title: info.pages.home.title },
+  { name: 'description', content: info.pages.home.description },
+]
 
 function Home() {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
   return (
     <div className="flex flex-col items-center justify-center gap-2 p-4">
       <div className="flex flex-col items-center justify-center gap-4">
@@ -36,7 +43,7 @@ function Home() {
         <OpenMenu />
       </div>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

@@ -1,12 +1,14 @@
-# robots.txt for Trempat Burger
+
 User-agent: *
 Allow: /
+Allow: /carta
+Allow: /contacte
+
+Disallow: /home
 Disallow: /admin
 Disallow: /api
 Disallow: /*.json$
-
-# Block access to non-existent routes
-Disallow: /home
+Disallow: /action.about
 
 # Sitemap
 Sitemap: https://trempatburger.com/sitemap.xml

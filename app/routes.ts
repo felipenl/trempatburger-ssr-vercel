@@ -19,9 +19,9 @@ export const paths = [
   },
   {
     id: 'about',
-    path: '/about',
+    path: '/contacte',
     label: 'nav.about',
-    file: 'routes/about.tsx',
+    file: 'routes/contacte.tsx',
     priority: '0.8',
     changefreq: 'monthly',
   },
@@ -31,8 +31,9 @@ export default [
   layout('components/layout/layout.tsx', [
     index('routes/home.tsx'),
     route('carta', 'routes/menu.tsx'),
-    route('about', 'routes/about.tsx'),
+    route('contacte', 'routes/contacte.tsx'),
     route('home', 'routes/home-redirect.tsx'),
     route('*', 'routes/not-found.tsx'),
   ]),
+  route('sitemap.xml', 'routes/sitemap[.]xml.tsx'),
 ] satisfies RouteConfig

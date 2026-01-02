@@ -4,6 +4,13 @@ import stylesheet from '@styles/main.css?url'
 import type { MetaFunction } from 'react-router'
 
 export const links: Route.LinksFunction = () => [
+  // Preload main font and CSS for performance
+  {
+    rel: 'preload',
+    as: 'style',
+    href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
+  },
+  { rel: 'preload', as: 'style', href: stylesheet },
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
   {
     rel: 'preconnect',
@@ -15,6 +22,13 @@ export const links: Route.LinksFunction = () => [
     href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
   },
   { rel: 'stylesheet', href: stylesheet },
+  // Favicons and manifest
+  { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+  { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon/favicon-32x32.png' },
+  { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon/favicon-16x16.png' },
+  { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon/apple-touch-icon.png' },
+  { rel: 'manifest', href: '/favicon/site.webmanifest' },
+  { rel: 'shortcut icon', href: '/favicon.ico' },
 ]
 
 export const meta: MetaFunction = ({ location }) => {
@@ -24,6 +38,7 @@ export const meta: MetaFunction = ({ location }) => {
   return [
     { title: info.title },
     { charSet: 'utf-8' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { name: 'description', content: info.description },
 
     {

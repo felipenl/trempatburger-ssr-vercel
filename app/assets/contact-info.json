@@ -10,6 +10,20 @@
   "email": "trempatburger@gmail.com",
   "instagram": "trempat.burger",
   "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.198401529322!2d2.3604287766496923!3d41.62984277127015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4c912285a8d79%3A0xa94f8ed2fe8f9584!2sTREMPAT%20burger!5e0!3m2!1sen!2ses!4v1757049305461!5m2!1sen!2ses",
+  "pages": {
+    "home": {
+      "title": "Trempat Burger",
+      "description": "Trempat Burger no és una hamburgueseria qualsevol.\nAquí tot es fa a lo bèstia: pans sucosos, carn de vaca vella al punt perfecte i receptes que trenquen amb el de sempre.\nEns agraden les mescles atrevides, els toppings que sorprenen i aquell toc canalla que fa que cada burger sigui única. Tant se val si te la menges al local, te l’endús o t’arriba a casa: cada Trempat està pensada perquè diguis “buah, quina passada” des del primer mos.\nEn resum: hamburgueses amb ànima, sense filtres i amb molt de rock’n’roll."
+    },
+    "menu": {
+      "title": "Trempat Burger | Carta",
+      "description": "Fes un cop d'ull a la carta!"
+    },
+    "about": {
+      "title": "Trempat Burger | Sobre Nosaltres",
+      "description": "Contacta amb nosaltres o visita'ns a Cardedeu."
+    }
+  },
   "meta": {
     "address": {
       "@type": "PostalAddress",

@@ -1,5 +1,7 @@
 {
-  "name": "react-router",
+  "name": "trempat-burger-ssr-vercel",
+  "version": "1.0.0",
+  "description": "Trempat Burger SSR app deployed on Vercel using React Router",
   "private": true,
   "type": "module",
   "scripts": {

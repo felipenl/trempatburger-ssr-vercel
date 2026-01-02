@@ -1,5 +1,12 @@
-import MenuCategories from '@components/carta/categories';
-import MenuSidebar from '@components/carta/sidebar';
+import MenuCategories from '@components/carta/categories'
+import MenuSidebar from '@components/carta/sidebar'
+import type { MetaFunction } from 'react-router'
+import info from '@assets/contact-info.json'
+
+export const meta: MetaFunction = () => [
+  { title: info.pages.menu.title },
+  { name: 'description', content: info.pages.menu.description },
+]
 
 function Menu() {
   return (
@@ -11,7 +18,7 @@ function Menu() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Menu;
+export default Menu

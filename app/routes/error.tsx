@@ -1,12 +1,12 @@
-import { Button } from '@components/ui/button';
-import { Store } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
-import { Link, useRouteError } from 'react-router';
+import { Button } from '@components/ui/button'
+import { Store } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
+import { Link, useRouteError } from 'react-router'
 
 function Error() {
-  const { t } = useTranslation();
-  const error = useRouteError();
-  console.log(error);
+  const { t } = useTranslation()
+  const error = useRouteError()
+  console.log(error)
 
   return (
     <div className="flex h-full w-full flex-col items-center justify-center p-4 text-center">
@@ -16,7 +16,7 @@ function Error() {
           <div>{t('errors.message1')}</div>
           <div>
             {t('errors.message2')}
-            <Link to={{ pathname: '/about', hash: '#contact-form' }} className="underline">
+            <Link to={{ pathname: '/contacte', hash: '#contact-form' }} className="underline">
               {t('errors.contact-here')}
             </Link>
           </div>
@@ -30,7 +30,7 @@ function Error() {
         </Link>
       </div>
     </div>
-  );
+  )
 }
 
-export default Error;
+export default Error
