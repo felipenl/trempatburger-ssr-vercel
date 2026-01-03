@@ -106,7 +106,7 @@ export default function CookieBanner() {
           <Button variant="outline" onClick={handleDecline} className="my-2">
             {t('cookie-banner.essential')}
           </Button>
-          <Button variant="default" onClick={handleAccept}>
+          <Button variant="default" onClick={handleAccept} className="my-2">
             {t('cookie-banner.accept')}
           </Button>
         </DialogFooter>
