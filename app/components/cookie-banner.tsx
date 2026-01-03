@@ -103,7 +103,7 @@ export default function CookieBanner() {
           </AccordionItem>
         </Accordion>
         <DialogFooter>
-          <Button variant="outline" onClick={handleDecline}>
+          <Button variant="outline" onClick={handleDecline} className="my-2">
             {t('cookie-banner.essential')}
           </Button>
           <Button variant="default" onClick={handleAccept}>

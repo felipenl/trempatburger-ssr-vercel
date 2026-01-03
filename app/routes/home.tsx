@@ -15,7 +15,7 @@ function Home() {
   const { t } = useTranslation()
   return (
     <div className="flex flex-col items-center justify-center gap-2 p-4">
-      <div className="flex flex-col items-center justify-center gap-4">
+      <div className="flex w-full flex-col items-center justify-center gap-4">
         <Trempat
           role="img"
           aria-label={t('brand.name')}
@@ -27,7 +27,7 @@ function Home() {
           className="slide-in-from-bottom animate-in -mt-8 w-8/10 max-w-4xl drop-shadow-lg ease-in-out lg:-mt-18"
         />
 
-        <div className="mx-auto my-8 w-7/10 text-center md:max-w-3/4 lg:my-20 xl:max-w-3/5">
+        <div className="mx-auto my-8 w-full text-center md:max-w-3/4 lg:my-20 lg:w-7/10 xl:max-w-3/5">
           <div>
             {(t('brand.description') || '').split('\n').map((line, index) => (
               <p
