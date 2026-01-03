@@ -1,6 +1,4 @@
 /* Riffic font family */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-/* Light (300) */
 @font-face {
   font-family: 'Riffic';
   src: url('/fonts/riffic/riffic-light.ttf') format('truetype');

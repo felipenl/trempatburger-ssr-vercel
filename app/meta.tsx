@@ -4,9 +4,12 @@ import type { LinkDescriptor } from 'react-router'
 
 export const getLinks = () =>
   [
+    // Preconnect for faster Google Fonts loading
+    { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'anonymous' },
     // Preload critical styles first
     { rel: 'preload', as: 'style', href: stylesheet },
-    // Load only Roboto Flex with essential weights (preconnect moved inline for efficiency)
+    // Load optimized Google Fonts (fewer weights for mobile)
     {
       rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500&display=swap',
