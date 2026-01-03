@@ -1,4 +1,28 @@
 {
+  "cookie-banner": {
+    "accept": "Acceptar",
+    "essential": "Acceptar només les essencials",
+    "message": "Aquest lloc web utilitza galetes per millorar l'experiència d'usuari.",
+    "privacy-policy": "Veure la política de privacitat"
+  },
+  "privacy": {
+    "title": "Política de privacitat i cookies",
+    "intro": "A Trempat Burger, la teva privacitat és important per a nosaltres. Aquesta pàgina explica quines dades recollim, com utilitzem les galetes i els teus drets sobre la teva informació.",
+    "what-info-title": "Quina informació recollim?",
+    "what-info-analytics": "Dades anònimes d'analítica (p. ex. visites, tipus de dispositiu). No emmagatzemem dades personals.",
+    "what-info-contact": "No recollim ni emmagatzemem dades personals de comandes ni formularis de contacte.",
+    "cookies-title": "Galetes",
+    "cookies-intro": "Utilitzem galetes per:",
+    "cookies-lang-theme": "Recordar les teves preferències d'idioma i tema",
+    "cookies-analytics": "Analitzar el trànsit web",
+    "cookies-experience": "Millorar la teva experiència al nostre web",
+    "cookies-consent": "Les galetes no essencials (com l'analítica) només s'estableixen després que donis el teu consentiment a través del nostre bàner de cookies.",
+    "rights-title": "Els teus drets",
+    "rights-withdraw": "Pots retirar el consentiment de cookies en qualsevol moment esborrant les cookies del teu navegador.",
+    "rights-request": "No emmagatzemem cap dada personal. Tota l'analítica és anònima.",
+    "contact-title": "Contacte",
+    "contact-text": "Per a qualsevol qüestió relacionada amb la privacitat, escriu-nos a"
+  },
   "common": {
     "loading": "Carregant",
     "error": "S'ha produït un error",

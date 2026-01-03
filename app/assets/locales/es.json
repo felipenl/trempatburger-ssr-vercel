@@ -1,4 +1,28 @@
 {
+  "cookie-banner": {
+    "accept": "Aceptar",
+    "essential": "Aceptar solo las esenciales",
+    "message": "Este sitio web utiliza cookies para mejorar la experiencia del usuario.",
+    "privacy-policy": "Ver la política de privacidad"
+  },
+  "privacy": {
+    "title": "Política de privacidad y cookies",
+    "intro": "En Trempat Burger, tu privacidad es importante para nosotros. Esta página explica qué datos recogemos, cómo usamos las cookies y tus derechos sobre tu información.",
+    "what-info-title": "¿Qué información recogemos?",
+    "what-info-analytics": "Datos anónimos de analítica (p. ej. visitas, tipo de dispositivo). No almacenamos datos personales.",
+    "what-info-contact": "No recogemos ni almacenamos datos personales de pedidos ni formularios de contacto.",
+    "cookies-title": "Cookies",
+    "cookies-intro": "Utilizamos cookies para:",
+    "cookies-lang-theme": "Recordar tus preferencias de idioma y tema",
+    "cookies-analytics": "Analizar el tráfico web",
+    "cookies-experience": "Mejorar tu experiencia en nuestro sitio",
+    "cookies-consent": "Las cookies no esenciales (como la analítica) solo se establecen después de que des tu consentimiento a través de nuestro banner de cookies.",
+    "rights-title": "Tus derechos",
+    "rights-withdraw": "Puedes retirar el consentimiento de cookies en cualquier momento borrando las cookies de tu navegador.",
+    "rights-request": "No almacenamos ningún dato personal. Toda la analítica es anónima.",
+    "contact-title": "Contacto",
+    "contact-text": "Para cuestiones relacionadas con la privacidad, escríbenos a"
+  },
   "common": {
     "loading": "Cargando",
     "error": "Ha ocurrido un error",

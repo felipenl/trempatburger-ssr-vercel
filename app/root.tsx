@@ -11,7 +11,6 @@ import type { ServerContext } from '@/types/server'
 import ErrorBoundary from '@routes/error'
 import buildServerContext from './components/server/server-context'
 import { meta, links } from './meta'
-import { Analytics } from '@vercel/analytics/react'
 import App from './app'
 
 export async function loader(args: LoaderFunctionArgs) {
@@ -29,7 +28,6 @@ export function Layout({ children }: { children: ReactNode }) {
         <Links />
       </head>
       <body>
-        <Analytics />
         {children}
         <ScrollRestoration />
         <Scripts />

@@ -9,10 +9,12 @@ export interface GAEvent {
 }
 
 export const logPageView = (path: string): void => {
+  if (!isInitialized) return
   ReactGA.send({ hitType: 'pageview', page: path })
 }
 
 export const logEvent = ({ category, action, label, value }: GAEvent): void => {
+  if (!isInitialized) return
   ReactGA.event({
     category,
     action,

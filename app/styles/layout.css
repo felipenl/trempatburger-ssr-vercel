@@ -73,5 +73,5 @@ body {
 }
 
 button {
-  @apply transition-all hover:scale-110;
+  @apply transition-all;
 }

@@ -3,11 +3,11 @@ h1 {
 }
 
 h2 {
-  @apply font-riffic scroll-m-20 pb-2 text-3xl font-bold tracking-tight uppercase first:mt-0;
+  @apply font-riffic my-2 scroll-m-20 text-3xl font-bold tracking-tight uppercase first:mt-0;
 }
 
 h3 {
-  @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+  @apply my-2 scroll-m-20 text-2xl font-semibold tracking-tight;
 }
 
 h4 {
@@ -15,7 +15,7 @@ h4 {
 }
 
 p {
-  @apply leading-normal whitespace-pre-wrap [&:not(:first-child)]:mt-6;
+  @apply leading-normal whitespace-pre-wrap not-first:mt-6 first:mt-0!;
 }
 
 blockquote {

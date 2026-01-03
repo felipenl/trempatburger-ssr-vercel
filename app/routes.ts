@@ -33,6 +33,7 @@ export default [
     route('carta', 'routes/menu.tsx'),
     route('contacte', 'routes/contacte.tsx'),
     route('home', 'routes/home-redirect.tsx'),
+    route('privacitat', 'routes/privacy.tsx'),
     route('*', 'routes/not-found.tsx'),
   ]),
   route('sitemap.xml', 'routes/sitemap[.]xml.tsx'),

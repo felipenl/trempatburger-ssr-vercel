@@ -1,4 +1,28 @@
 {
+  "cookie-banner": {
+    "accept": "Accept",
+    "essential": "Accept only essential",
+    "message": "This website uses cookies to enhance the user experience.",
+    "privacy-policy": "Review the privacy policy"
+  },
+  "privacy": {
+    "title": "Privacy & Cookie Policy",
+    "intro": "At Trempat Burger, your privacy is important to us. This page explains what data we collect, how we use cookies, and your rights regarding your information.",
+    "what-info-title": "What information do we collect?",
+    "what-info-analytics": "Anonymous analytics data (e.g., page views, device type). We do not store any personal data.",
+    "what-info-contact": "We do not collect or store any personal data from orders or contact forms.",
+    "cookies-title": "Cookies",
+    "cookies-intro": "We use cookies to:",
+    "cookies-lang-theme": "Remember your language and theme preferences",
+    "cookies-analytics": "Analyze website traffic",
+    "cookies-experience": "Improve your experience on our site",
+    "cookies-consent": "Non-essential cookies (like analytics) are only set after you give consent via our cookie banner.",
+    "rights-title": "Your Rights",
+    "rights-withdraw": "You can withdraw cookie consent at any time by clearing your browser cookies.",
+    "rights-request": "We do not store any personal data. All analytics is anonymous.",
+    "contact-title": "Contact",
+    "contact-text": "For privacy-related questions, please email us at"
+  },
   "common": {
     "loading": "Loading",
     "error": "An error occurred",
