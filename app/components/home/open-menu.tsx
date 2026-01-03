@@ -1,11 +1,11 @@
-import { useTranslation } from 'react-i18next';
-import LazyImg from '@components/lazy/lazy-image';
-import FadeIn from '@components/animations/fade-in';
-import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next'
+import LazyImg from '@components/lazy/lazy-image'
+import FadeIn from '@components/animations/fade-in'
+import { ArrowRight } from 'lucide-react'
+import { Link } from 'react-router'
 
 function OpenMenu() {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <FadeIn>
@@ -21,11 +21,11 @@ function OpenMenu() {
           </Link>
         </div>
         <div className="image-container -mb-25">
-          <LazyImg src="images/mano-burgers.png" alt="Hand holding burgers" />
+          <LazyImg src="images/mano-burgers.webp" alt="Hand holding burgers" />
         </div>
       </div>
     </FadeIn>
-  );
+  )
 }
 
-export default OpenMenu;
+export default OpenMenu

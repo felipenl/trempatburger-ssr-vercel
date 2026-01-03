@@ -48,7 +48,7 @@ export default function LanguageSwitcher() {
               aria-current={active ? 'page' : undefined}
             >
               <LazyImg
-                src={`/images/locales/${l.code}.png`}
+                src={`/images/locales/${l.code}.webp`}
                 alt={i18n.resolvedLanguage || LocaleFallBack}
                 className="mx-1 h-auto w-6 lg:w-4"
               />

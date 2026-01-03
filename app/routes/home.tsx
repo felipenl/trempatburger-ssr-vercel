@@ -22,9 +22,9 @@ function Home() {
           className="text-trempat-red animate-in slide-in-from-top z-10 m-8 mx-auto w-4/5 max-w-2xl md:w-1/2 lg:w-3/5"
         />
         <LazyImg
-          src="images/tri-burger.png"
+          src="images/tri-burger.webp"
           alt="Burgers"
-          className="slide-in-from-bottom animate-in -mt-8 w-8/10 max-w-4xl drop-shadow-lg ease-in-out lg:-mt-18"
+          className="slide-in-from-bottom animate-in mx-auto -mt-8 w-8/10 max-w-4xl drop-shadow-lg ease-in-out lg:-mt-18"
         />
 
         <div className="mx-auto my-8 w-full text-center md:max-w-3/4 lg:my-20 lg:w-7/10 xl:max-w-3/5">

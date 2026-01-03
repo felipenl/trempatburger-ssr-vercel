@@ -4,21 +4,12 @@ import type { LinkDescriptor } from 'react-router'
 
 export const getLinks = () =>
   [
-    {
-      rel: 'preload',
-      as: 'style',
-      href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
-    },
+    // Preload critical styles first
     { rel: 'preload', as: 'style', href: stylesheet },
-    { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.gstatic.com',
-      crossOrigin: 'anonymous',
-    },
+    // Load only Roboto Flex with essential weights (preconnect moved inline for efficiency)
     {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
+      href: 'https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500&display=swap',
     },
     { rel: 'stylesheet', href: stylesheet },
     { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },

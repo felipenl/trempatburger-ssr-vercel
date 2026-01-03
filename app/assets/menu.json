@@ -7,31 +7,31 @@
       {
         "id": "croquetesdanecalestilpekines",
         "key": "menu.entrants.croquetesdanecalestilpekines",
-        "image": "croquetas.jpg",
+        "image": "croquetas.webp",
         "descriptionKey": "menu.entrants.croquetesdanecalestilpekines.description"
       },
       {
         "id": "pollastrefregit",
         "key": "menu.entrants.pollastrefregit",
-        "image": "pollo.jpg",
+        "image": "pollo.webp",
         "descriptionKey": "menu.entrants.pollastrefregit.description"
       },
       {
         "id": "flordecebaatempura",
         "key": "menu.entrants.flordecebaatempura",
-        "image": "cebolla.jpg",
+        "image": "cebolla.webp",
         "descriptionKey": "menu.entrants.flordecebaatempura.description"
       },
       {
         "id": "aletsdepollasteasiatiques",
         "key": "menu.entrants.aletsdepollasteasiatiques",
-        "image": "alitas.jpg",
+        "image": "alitas.webp",
         "descriptionKey": "menu.entrants.aletsdepollasteasiatiques.description"
       },
       {
         "id": "natxosambsalsadecheddartrufat",
         "key": "menu.entrants.natxosambsalsadecheddartrufat",
-        "image": "nachos.jpg",
+        "image": "nachos.webp",
         "descriptionKey": "menu.entrants.natxosambsalsadecheddartrufat.description"
       }
     ]
@@ -44,49 +44,49 @@
       {
         "id": "iberica",
         "key": "menu.burgers.iberica",
-        "image": "iberica.jpg",
+        "image": "iberica.webp",
         "descriptionKey": "menu.burgers.iberica.description"
       },
       {
         "id": "vegana",
         "key": "menu.burgers.vegana",
-        "image": "vegana.jpg",
+        "image": "vegana.webp",
         "descriptionKey": "menu.burgers.vegana.description"
       },
       {
         "id": "cabrona",
         "key": "menu.burgers.cabrona",
-        "image": "cabrona.jpg",
+        "image": "cabrona.webp",
         "descriptionKey": "menu.burgers.cabrona.description"
       },
       {
         "id": "cheesey",
         "key": "menu.burgers.cheesey",
-        "image": "cheesey.jpg",
+        "image": "cheesey.webp",
         "descriptionKey": "menu.burgers.cheesey.description"
       },
       {
         "id": "campera",
         "key": "menu.burgers.campera",
-        "image": "campera.jpg",
+        "image": "campera.webp",
         "descriptionKey": "menu.burgers.campera.description"
       },
       {
         "id": "classica",
         "key": "menu.burgers.classica",
-        "image": "classica.jpg",
+        "image": "classica.webp",
         "descriptionKey": "menu.burgers.classica.description"
       },
       {
         "id": "porca",
         "key": "menu.burgers.porca",
-        "image": "porca.jpg",
+        "image": "porca.webp",
         "descriptionKey": "menu.burgers.porca.description"
       },
       {
         "id": "burgertemporada",
         "key": "menu.burgers.burgertemporada",
-        "image": "burgertemporada.png",
+        "image": "burgertemporada.webp",
         "descriptionKey": "menu.burgers.burgertemporada.description"
       }
     ]
@@ -99,19 +99,19 @@
       {
         "id": "classiques",
         "key": "menu.patates.classiques",
-        "image": "fritas.jpg",
+        "image": "fritas.webp",
         "descriptionKey": "menu.patates.classiques.description"
       },
       {
         "id": "moniato",
         "key": "menu.patates.moniato",
-        "image": "boniato.jpg",
+        "image": "boniato.webp",
         "descriptionKey": "menu.patates.moniato.description"
       },
       {
         "id": "combo",
         "key": "menu.patates.combo",
-        "image": "combo.png",
+        "image": "combo.webp",
         "descriptionKey": "menu.patates.combo.description"
       }
     ]
@@ -125,7 +125,7 @@
       {
         "id": "cheesecake",
         "key": "menu.postres.cheesecake",
-        "image": "cheescake-lotus.jpg",
+        "image": "cheescake-lotus.webp",
         "descriptionKey": "menu.postres.cheesecake.description"
       },
       {
@@ -137,7 +137,7 @@
       {
         "id": "cookienutella",
         "key": "menu.postres.cookienutella",
-        "image": "cookie-nutella.jpg",
+        "image": "cookie-nutella.webp",
         "descriptionKey": "menu.postres.cookienutella.description"
       },
       {

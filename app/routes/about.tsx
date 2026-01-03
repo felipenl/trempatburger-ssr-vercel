@@ -38,7 +38,7 @@ function About() {
           <div>
             <p className="p-2 text-lg font-light">{t('about.we-are')}</p>
           </div>
-          <LazyImg src="images/us.jpg" alt="Our Team" className="rounded-lg shadow-lg" />
+          <LazyImg src="images/us.webp" alt="Our Team" className="rounded-lg shadow-lg" />
         </div>
       </div>
 
