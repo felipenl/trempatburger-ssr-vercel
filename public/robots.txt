@@ -3,6 +3,11 @@ User-agent: *
 Allow: /
 Allow: /carta
 Allow: /contacte
+Allow: /privacitat
+
+Allow: /favicon*
+Allow: /android-chrome*
+Allow: /apple-touch-icon.png
 
 Disallow: /home
 Disallow: /admin
